@@ -1,0 +1,9 @@
+{
+  "name": "pixel-office",
+  "version": "0.8.0",
+  "description": "Shows workers live in a side panel inside Claude; forwards waiting-for-approval and finish events to NorthLight Tower.",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "NorthLightPixels"
+  }
+}

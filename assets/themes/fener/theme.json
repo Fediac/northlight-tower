@@ -1,0 +1,194 @@
+{
+ "id": "fener",
+ "name": "Gothic lighthouse",
+ "files": [
+  "bg/floor_galeri.png",
+  "bg/floor_galeri_glass.png",
+  "bg/floor_kod.png",
+  "bg/floor_kod_glass.png",
+  "bg/floor_lobi.png",
+  "bg/floor_lobi_glass.png",
+  "bg/floor_mudur.png",
+  "bg/floor_mudur_glass.png",
+  "bg/floor_tasarim.png",
+  "bg/floor_tasarim_glass.png",
+  "bg/skyline_far.png",
+  "bg/skyline_near_keyed.png",
+  "f/arcade.png",
+  "f/armchair.png",
+  "f/balcony_railing.png",
+  "f/bench.png",
+  "f/boxes.png",
+  "f/chair_small.png",
+  "f/coffee_machine.png",
+  "f/coffee_table.png",
+  "f/desk_b.png",
+  "f/easel.png",
+  "f/exec_chair.png",
+  "f/exec_desk_clean.png",
+  "f/exec_device.png",
+  "f/floor_lamp.png",
+  "f/monitor.png",
+  "f/plant_tall.png",
+  "f/poster_robot.png",
+  "f/poster_synth.png",
+  "f/printer.png",
+  "f/prop_cactus.png",
+  "f/prop_headphones.png",
+  "f/prop_mug.png",
+  "f/prop_ramen.png",
+  "f/reception_desk.png",
+  "f/server_rack.png",
+  "f/shelf_unit.png",
+  "f/sofa_a.png",
+  "f/trophy_case.png",
+  "f/vape_stand.png",
+  "f/vending.png",
+  "f/water_cooler.png",
+  "f/whiteboard.png"
+ ],
+ "floorNames": {
+  "mudur": "Head Keeper's Room",
+  "kod": "Radio Room",
+  "tasarim": "Archive & Lab",
+  "galeri": "Sea Gallery",
+  "lobi": "Rocky Pier & Hearth"
+ },
+ "floorShort": {
+  "mudur": "Keeper",
+  "kod": "Radio",
+  "tasarim": "Archive",
+  "galeri": "Gallery",
+  "lobi": "Pier"
+ },
+ "acc": {
+  "mudur": [
+   236,
+   196,
+   104
+  ],
+  "kod": [
+   118,
+   200,
+   178
+  ],
+  "tasarim": [
+   158,
+   182,
+   226
+  ],
+  "galeri": [
+   120,
+   220,
+   176
+  ],
+  "lobi": [
+   226,
+   160,
+   86
+  ]
+ },
+ "backdrop": {
+  "top": "#03080a",
+  "bottom": "#10252c",
+  "star": "#bfe8de"
+ },
+ "roof": {
+  "top": "#03080a",
+  "bottom": "#173842",
+  "star": "#d6ece6",
+  "mast": "#2a3f45",
+  "blink": "#ffd98a",
+  "blinkGlow": "#ffcf70",
+  "signBg": "#0b1a1e",
+  "signEdge": "#c4a050",
+  "signHi": "rgba(196,160,80,.35)",
+  "signGlow": "#ffcf70",
+  "t0": "#e8c57a",
+  "t1": "#f2eadb",
+  "t2": "#8fb0a8"
+ },
+ "base": {
+  "fill": "#050b0d",
+  "line": "#7c6234",
+  "dash": "#16262b"
+ },
+ "sky": {
+  "fill": "#0a1519",
+  "tint": "rgba(8,28,34,.26)",
+  "particle": {
+   "kind": "rain",
+   "color": "rgba(190,225,218,.38)",
+   "size": 1
+  },
+  "vehicles": {
+   "colors": [
+    "#ffe08a"
+   ],
+   "w": 2,
+   "h": 1
+  }
+ },
+ "fx": {
+  "beam": "#b8ffe8",
+  "beamGlow": "#80e0c0",
+  "vapor": "#b9cfc6",
+  "vaporMask": "#c7d6cf",
+  "steam": "#dfe9e6"
+ },
+ "glow": {
+  "lamp": "#ffd98a",
+  "sofa": "#ffb860",
+  "vape": "#b8ffe8",
+  "arcade": "#ffd98a",
+  "door": "#ffd98a",
+  "desk": "#7aa89c",
+  "rack": "#ffd98a",
+  "rackLed": "#2a1f17"
+ },
+ "gallery": {
+  "badge": "#e0b050",
+  "hover": "#ffd98a",
+  "glow": "#ffd98a",
+  "holo": [
+   140,
+   230,
+   200
+  ],
+  "holoLine": [
+   150,
+   240,
+   210
+  ],
+  "bg": "#0a1215",
+  "holoBg": "#05110f"
+ },
+ "board": {
+  "bg": "#0a1418",
+  "title": "#e8c57a",
+  "ticker": "#8fd8c0",
+  "tickerBg": "#0d1d22",
+  "line": "#2b4a52"
+ },
+ "elev": {
+  "leaf": "#3a2b20",
+  "line": "#241912",
+  "edge": "#6b4e2e",
+  "inner": [
+   "#ffe9b8",
+   "#e0b870",
+   "#8a6530"
+  ],
+  "glow": "#ffd98a"
+ },
+ "mon": {
+  "off": "#2a2418",
+  "bezel": true
+ },
+ "lid": {
+  "outline": "#070a0b",
+  "body": "#4a3a22",
+  "hi": "#7a6234",
+  "base": "#241a0e"
+ }
+}

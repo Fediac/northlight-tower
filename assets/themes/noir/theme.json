@@ -1,0 +1,228 @@
+{
+ "id": "noir",
+ "name": "Noir detective agency",
+ "files": [
+  "bg/floor_galeri.png",
+  "bg/floor_galeri_glass.png",
+  "bg/floor_kod.png",
+  "bg/floor_kod_glass.png",
+  "bg/floor_lobi.png",
+  "bg/floor_lobi_glass.png",
+  "bg/floor_mudur.png",
+  "bg/floor_mudur_glass.png",
+  "bg/floor_tasarim.png",
+  "bg/floor_tasarim_glass.png",
+  "bg/skyline_far.png",
+  "bg/skyline_near_keyed.png",
+  "f/arcade.png",
+  "f/armchair.png",
+  "f/balcony_railing.png",
+  "f/bench.png",
+  "f/boxes.png",
+  "f/chair_small.png",
+  "f/coffee_machine.png",
+  "f/coffee_table.png",
+  "f/desk_b.png",
+  "f/easel.png",
+  "f/exec_chair.png",
+  "f/exec_desk_clean.png",
+  "f/exec_device.png",
+  "f/floor_lamp.png",
+  "f/monitor.png",
+  "f/plant_tall.png",
+  "f/poster_robot.png",
+  "f/poster_synth.png",
+  "f/printer.png",
+  "f/prop_cactus.png",
+  "f/prop_headphones.png",
+  "f/prop_mug.png",
+  "f/prop_ramen.png",
+  "f/reception_desk.png",
+  "f/server_rack.png",
+  "f/shelf_unit.png",
+  "f/sofa_a.png",
+  "f/trophy_case.png",
+  "f/vape_stand.png",
+  "f/vending.png",
+  "f/water_cooler.png",
+  "f/whiteboard.png",
+  "atlas/atlas.json",
+  "atlas/bilim.png",
+  "atlas/bluehair.png",
+  "atlas/cyborg.png",
+  "atlas/gasmask.png",
+  "atlas/gozluk.png",
+  "atlas/hacker.png",
+  "atlas/kedi.png",
+  "atlas/knight.png",
+  "atlas/mavi.png",
+  "atlas/mudire.png",
+  "atlas/mudur.png",
+  "atlas/pilot.png",
+  "atlas/punk.png",
+  "atlas/robot.png",
+  "atlas/samuray.png",
+  "atlas/sanatci.png",
+  "faces/hacker.png",
+  "faces/punk.png",
+  "faces/bluehair.png",
+  "faces/cyborg.png",
+  "faces/knight.png",
+  "faces/gasmask.png",
+  "faces/mavi.png",
+  "faces/gozluk.png",
+  "faces/kedi.png",
+  "faces/robot.png",
+  "faces/bilim.png",
+  "faces/sanatci.png",
+  "faces/pilot.png",
+  "faces/samuray.png",
+  "faces/mudur.png",
+  "faces/mudire.png"
+ ],
+ "floorNames": {
+  "mudur": "Chief Inspector's Office",
+  "kod": "Intel & Typing Pool",
+  "tasarim": "Darkroom",
+  "galeri": "Evidence Gallery",
+  "lobi": "Jazz Club"
+ },
+ "floorShort": {
+  "mudur": "Inspector",
+  "kod": "Intel",
+  "tasarim": "Darkroom",
+  "galeri": "Evidence",
+  "lobi": "Jazz"
+ },
+ "acc": {
+  "mudur": [
+   255,
+   200,
+   80
+  ],
+  "kod": [
+   210,
+   210,
+   200
+  ],
+  "tasarim": [
+   255,
+   76,
+   60
+  ],
+  "galeri": [
+   226,
+   226,
+   214
+  ],
+  "lobi": [
+   255,
+   168,
+   60
+  ]
+ },
+ "backdrop": {
+  "top": "#030304",
+  "bottom": "#141418",
+  "star": "#d8d8d0"
+ },
+ "roof": {
+  "top": "#030304",
+  "bottom": "#1e1e24",
+  "star": "#d8d8d0",
+  "mast": "#2a2a2e",
+  "blink": "#ff4d3a",
+  "blinkGlow": "#ff3322",
+  "signBg": "#0a0a0c",
+  "signEdge": "#e8e8dc",
+  "signHi": "rgba(232,232,220,.30)",
+  "signGlow": "#ff4d3a",
+  "t0": "#ff4d3a",
+  "t1": "#f0f0e6",
+  "t2": "#9a9a94"
+ },
+ "base": {
+  "fill": "#060607",
+  "line": "#8a7a60",
+  "dash": "#1c1c1f"
+ },
+ "sky": {
+  "fill": "#08080a",
+  "tint": "rgba(8,8,14,.30)",
+  "particle": {
+   "kind": "rain",
+   "color": "rgba(200,200,215,.38)",
+   "size": 1
+  },
+  "vehicles": {
+   "colors": [
+    "#ffe9a8",
+    "#ff6a5a"
+   ],
+   "w": 2,
+   "h": 1
+  }
+ },
+ "fx": {
+  "beam": "#f0f0e6",
+  "beamGlow": "#d0d0c8",
+  "vapor": "#cfcfc8",
+  "vaporMask": "#c8c8c0",
+  "steam": "#e8e8e0"
+ },
+ "glow": {
+  "lamp": "#ffe9a8",
+  "sofa": "#ff6a3a",
+  "vape": "#ffa83c",
+  "arcade": "#ff4d3a",
+  "door": "#ffa83c",
+  "desk": "#8a7a60",
+  "rack": "#ffe9a8",
+  "rackLed": "#1d1612"
+ },
+ "gallery": {
+  "badge": "#ff4d3a",
+  "hover": "#ff6a5a",
+  "glow": "#ffe9a8",
+  "holo": [
+   240,
+   240,
+   220
+  ],
+  "holoLine": [
+   250,
+   250,
+   235
+  ],
+  "bg": "#08080a",
+  "holoBg": "#0a0a0c"
+ },
+ "board": {
+  "bg": "#101012",
+  "title": "#ff4d3a",
+  "ticker": "#e8e8dc",
+  "tickerBg": "#1c1c1f",
+  "line": "#46464c"
+ },
+ "elev": {
+  "leaf": "#3a3a3e",
+  "line": "#232326",
+  "edge": "#6a6a70",
+  "inner": [
+   "#fff2c8",
+   "#d8c088",
+   "#80683a"
+  ],
+  "glow": "#ffe9a8"
+ },
+ "mon": {
+  "off": "#1c1814",
+  "bezel": true
+ },
+ "lid": {
+  "outline": "#050403",
+  "body": "#3a2c22",
+  "hi": "#6a5848",
+  "base": "#18120e"
+ }
+}

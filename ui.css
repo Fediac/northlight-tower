@@ -1,0 +1,49 @@
+/* NorthLight Tower — shared components (avatar, notification, tip, collapsible section). Colors only from theme.css variables. */
+[hidden] { display:none !important; }
+.av { display:inline-block; width:var(--s,28px); height:var(--s,28px); flex:0 0 var(--s,28px); border-radius:50%; background:var(--panel3) center 12%/cover no-repeat; image-rendering:pixelated; box-shadow:0 0 0 1px var(--line), 0 0 0 2px transparent; }
+.av.ring { box-shadow:0 0 0 2px var(--accent-bright); }
+
+/* notifications */
+#toasts { position:fixed; left:50%; bottom:18px; transform:translateX(-50%); z-index:90; display:flex; flex-direction:column; gap:8px; align-items:center; pointer-events:none; max-width:calc(100vw - 24px); }
+.toast { pointer-events:auto; display:flex; align-items:center; gap:12px; background:var(--panel3); color:var(--txt); border:1px solid var(--line); border-left:3px solid var(--accent-bright); border-radius:var(--radius); padding:9px 12px; font-size:var(--fs); box-shadow:var(--shadow); animation:toastin .18s ease-out; max-width:min(92vw, 520px); }
+.toast > span { min-width:0; overflow-wrap:anywhere; }
+.toast.ok { border-left-color:var(--ok); } .toast.bad { border-left-color:var(--bad); }
+.toast button { background:var(--accent); color:var(--accent-ink); border:0; border-radius:6px; padding:4px 10px; font:inherit; font-size:var(--fs-s); font-weight:600; cursor:pointer; white-space:nowrap; flex:0 0 auto; }
+.toast button:hover { background:var(--accent-bright); }
+.toast.out { opacity:0; transform:translateY(6px); transition:opacity .2s, transform .2s; }
+@keyframes toastin { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:none; } }
+
+/* tip: <button data-tip="What is it for?" [data-tip-pos="bottom|left|right|start|end|bottom-start|bottom-end"]>
+   So it does not overflow for buttons near an edge: "end"/"bottom-end" on the right edge, "start"/"bottom-start" on the left edge. */
+[data-tip] { position:relative; }
+[data-tip]::after { content:attr(data-tip); position:absolute; z-index:70; bottom:calc(100% + 7px); left:50%; transform:translate(-50%,4px); width:max-content; max-width:min(230px, 70vw); background:var(--panel3); color:var(--txt); border:1px solid var(--line); padding:5px 8px; border-radius:6px; font-size:var(--fs-s); font-weight:400; line-height:1.35; text-align:left; text-transform:none; letter-spacing:0; white-space:normal; pointer-events:none; opacity:0; box-shadow:var(--shadow); transition:opacity .12s, transform .12s; }
+[data-tip]:hover::after, [data-tip]:focus-visible::after { opacity:1; transform:translate(-50%,0); transition-delay:.4s; }
+[data-tip-pos="bottom"]::after { bottom:auto; top:calc(100% + 7px); }
+[data-tip-pos="left"]::after { bottom:auto; top:50%; left:auto; right:calc(100% + 7px); transform:translate(4px,-50%); }
+[data-tip-pos="left"]:hover::after, [data-tip-pos="left"]:focus-visible::after { transform:translate(0,-50%); }
+[data-tip-pos="right"]::after { bottom:auto; top:50%; left:calc(100% + 7px); transform:translate(-4px,-50%); }
+[data-tip-pos="right"]:hover::after, [data-tip-pos="right"]:focus-visible::after { transform:translate(0,-50%); }
+[data-tip-pos="start"]::after { left:0; transform:translate(0,4px); } [data-tip-pos="start"]:hover::after, [data-tip-pos="start"]:focus-visible::after { transform:none; }
+[data-tip-pos="end"]::after { left:auto; right:0; transform:translate(0,4px); } [data-tip-pos="end"]:hover::after, [data-tip-pos="end"]:focus-visible::after { transform:none; }
+[data-tip-pos="bottom-start"]::after { bottom:auto; top:calc(100% + 7px); left:0; transform:translate(0,-4px); }
+[data-tip-pos="bottom-end"]::after { bottom:auto; top:calc(100% + 7px); left:auto; right:0; transform:translate(0,-4px); }
+[data-tip-pos="bottom-start"]:hover::after, [data-tip-pos="bottom-start"]:focus-visible::after,
+[data-tip-pos="bottom-end"]:hover::after, [data-tip-pos="bottom-end"]:focus-visible::after { transform:none; }
+body.dragging [data-tip]::after { display:none; }
+/* when a menu / list is open the tip should not overlap the opened item (Replies list, ⋯ menu, settings button) */
+[data-tip][aria-expanded="true"]::after { display:none; }
+/* while the chat is open the notifications are at the top right (so they do not cover the text box) */
+body:has(#chatview:not([hidden])) #toasts { bottom:auto; top:calc(var(--hdr-h, 56px) + 10px); left:auto; right:14px; transform:none; align-items:flex-end; }
+
+/* collapsible section */
+.fold > .fold-h { display:flex; align-items:center; gap:7px; width:100%; background:transparent; border:0; padding:6px 2px; color:var(--dim); font:inherit; font-size:var(--fs-s); font-weight:600; letter-spacing:.5px; text-transform:uppercase; text-align:left; cursor:pointer; border-radius:6px; }
+.fold > .fold-h:hover { color:var(--txt); background:transparent; }
+.fold > .fold-h::before { content:'▸'; display:inline-block; font-size:10px; transition:transform .15s; }
+.fold[open] > .fold-h::before { transform:rotate(90deg); }
+.fold > .fold-h .cnt { margin-left:auto; font-weight:500; letter-spacing:0; text-transform:none; background:var(--panel3); color:var(--dim); border-radius:999px; padding:0 7px; }
+.fold > .fold-b { display:grid; grid-template-rows:0fr; transition:grid-template-rows .2s ease; }
+.fold[open] > .fold-b { grid-template-rows:1fr; }
+.fold:not([open]) > .fold-b { visibility:hidden; transition:grid-template-rows .2s ease, visibility 0s .2s; }      /* Tab should not enter the buttons of a closed section */
+.fold[open] > .fold-b { visibility:visible; }
+.fold > .fold-b > div { overflow:hidden; min-height:0; }
+@media (prefers-reduced-motion: reduce) { .fold > .fold-b, .fold > .fold-h::before, .toast, [data-tip]::after { transition:none; animation:none; } }

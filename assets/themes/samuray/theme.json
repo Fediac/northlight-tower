@@ -1,0 +1,225 @@
+{
+ "id": "samuray",
+ "name": "Samurai castle",
+ "files": [
+  "bg/floor_galeri.png",
+  "bg/floor_galeri_glass.png",
+  "bg/floor_kod.png",
+  "bg/floor_kod_glass.png",
+  "bg/floor_lobi.png",
+  "bg/floor_lobi_glass.png",
+  "bg/floor_mudur.png",
+  "bg/floor_mudur_glass.png",
+  "bg/floor_tasarim.png",
+  "bg/floor_tasarim_glass.png",
+  "bg/skyline_far.png",
+  "bg/skyline_near_keyed.png",
+  "f/arcade.png",
+  "f/armchair.png",
+  "f/balcony_railing.png",
+  "f/bench.png",
+  "f/boxes.png",
+  "f/chair_small.png",
+  "f/coffee_machine.png",
+  "f/coffee_table.png",
+  "f/desk_b.png",
+  "f/easel.png",
+  "f/exec_chair.png",
+  "f/exec_desk_clean.png",
+  "f/exec_device.png",
+  "f/floor_lamp.png",
+  "f/monitor.png",
+  "f/plant_tall.png",
+  "f/poster_robot.png",
+  "f/poster_synth.png",
+  "f/printer.png",
+  "f/prop_cactus.png",
+  "f/prop_headphones.png",
+  "f/prop_mug.png",
+  "f/prop_ramen.png",
+  "f/reception_desk.png",
+  "f/server_rack.png",
+  "f/shelf_unit.png",
+  "f/sofa_a.png",
+  "f/trophy_case.png",
+  "f/vape_stand.png",
+  "f/vending.png",
+  "f/water_cooler.png",
+  "f/whiteboard.png",
+  "atlas/atlas.json",
+  "atlas/bilim.png",
+  "atlas/bluehair.png",
+  "atlas/cyborg.png",
+  "atlas/gasmask.png",
+  "atlas/gozluk.png",
+  "atlas/hacker.png",
+  "atlas/kedi.png",
+  "atlas/knight.png",
+  "atlas/mavi.png",
+  "atlas/mudire.png",
+  "atlas/mudur.png",
+  "atlas/pilot.png",
+  "atlas/punk.png",
+  "atlas/robot.png",
+  "atlas/samuray.png",
+  "atlas/sanatci.png",
+  "faces/hacker.png",
+  "faces/punk.png",
+  "faces/bluehair.png",
+  "faces/cyborg.png",
+  "faces/knight.png",
+  "faces/gasmask.png",
+  "faces/mavi.png",
+  "faces/gozluk.png",
+  "faces/kedi.png",
+  "faces/robot.png",
+  "faces/bilim.png",
+  "faces/sanatci.png",
+  "faces/pilot.png",
+  "faces/samuray.png",
+  "faces/mudur.png",
+  "faces/mudire.png"
+ ],
+ "floorNames": {
+  "mudur": "Shogun's Chamber",
+  "kod": "Strategy & Scroll Hall",
+  "tasarim": "Ukiyo-e & Calligraphy Gallery",
+  "galeri": "Woodblock Print Gallery",
+  "lobi": "Sakura Garden & Tea House"
+ },
+ "floorShort": {
+  "mudur": "Shogun",
+  "kod": "Strategy",
+  "tasarim": "Ukiyo-e",
+  "galeri": "Gallery",
+  "lobi": "Garden"
+ },
+ "acc": {
+  "mudur": [
+   224,
+   56,
+   52
+  ],
+  "kod": [
+   240,
+   200,
+   120
+  ],
+  "tasarim": [
+   255,
+   150,
+   190
+  ],
+  "galeri": [
+   150,
+   212,
+   232
+  ],
+  "lobi": [
+   255,
+   128,
+   96
+  ]
+ },
+ "backdrop": {
+  "top": "#08040c",
+  "bottom": "#241028",
+  "star": "#ffe2ec"
+ },
+ "roof": {
+  "top": "#08040c",
+  "bottom": "#4a1c3a",
+  "star": "#ffe2ec",
+  "mast": "#3a2414",
+  "blink": "#e04a3a",
+  "blinkGlow": "#ff3a30",
+  "signBg": "#1c0e0a",
+  "signEdge": "#c0392b",
+  "signHi": "rgba(232,192,96,.35)",
+  "signGlow": "#ff9a6a",
+  "t0": "#ff9ab8",
+  "t1": "#fff0d8",
+  "t2": "#d8b890"
+ },
+ "base": {
+  "fill": "#0a0504",
+  "line": "#c0392b",
+  "dash": "#2a1a10"
+ },
+ "sky": {
+  "fill": "#0e0a16",
+  "tint": "rgba(50,12,40,.20)",
+  "particle": {
+   "kind": "fall",
+   "color": "rgba(255,170,200,.9)",
+   "size": 2
+  },
+  "vehicles": {
+   "colors": [],
+   "w": 2,
+   "h": 1
+  }
+ },
+ "fx": {
+  "beam": "#ffd0dc",
+  "beamGlow": "#ff9ab8",
+  "vapor": "#ffe0e8",
+  "vaporMask": "#f0d0d8",
+  "steam": "#f6ece6"
+ },
+ "glow": {
+  "lamp": "#ff9a6a",
+  "sofa": "#ff7a5a",
+  "vape": "#ffd0dc",
+  "arcade": "#ff9a6a",
+  "door": "#ff9a6a",
+  "desk": "#c0392b",
+  "rack": "#ff9a6a",
+  "rackLed": "#2a1a10"
+ },
+ "gallery": {
+  "badge": "#c0392b",
+  "hover": "#ff9ab8",
+  "glow": "#ff9a6a",
+  "holo": [
+   255,
+   190,
+   210
+  ],
+  "holoLine": [
+   255,
+   205,
+   220
+  ],
+  "bg": "#100806",
+  "holoBg": "#160a0c"
+ },
+ "board": {
+  "bg": "#1c0e0a",
+  "title": "#e8c060",
+  "ticker": "#ffd0dc",
+  "tickerBg": "#2a1810",
+  "line": "#6a3a2a"
+ },
+ "elev": {
+  "leaf": "#7a1e1a",
+  "line": "#4a1210",
+  "edge": "#e8c060",
+  "inner": [
+   "#fff0d0",
+   "#e8c890",
+   "#9a7040"
+  ],
+  "glow": "#ffd8a0"
+ },
+ "mon": {
+  "off": "#241810",
+  "bezel": true
+ },
+ "lid": {
+  "outline": "#050302",
+  "body": "#2a1a12",
+  "hi": "#c0392b",
+  "base": "#140c08"
+ }
+}

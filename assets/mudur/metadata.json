@@ -1,0 +1,109 @@
+{
+  "group_id": "36d216bc-8ef4-4e5e-a825-9a5f01558854",
+  "states": [
+    {
+      "character": {
+        "id": "ba7408f3-8198-4463-ba52-c3de399b83fa",
+        "name": "Idle",
+        "prompt": "executive manager boss with slicked-back silver hair, dark navy tailored suit, glowing cyan tie, gold cybernetic hand, black sunglasses, commanding posture",
+        "size": {
+          "width": 76,
+          "height": 76
+        },
+        "template_id": "mannequin",
+        "directions": 4,
+        "view": "low top-down",
+        "created_at": "2026-10-25T15:35:34.911828+00:00"
+      },
+      "folder": "Idle",
+      "frames": {
+        "rotations": {
+          "south": "Idle/rotations/south.png",
+          "west": "Idle/rotations/west.png",
+          "east": "Idle/rotations/east.png",
+          "north": "Idle/rotations/north.png"
+        },
+        "animations": {
+          "coffee": {
+            "south": [
+              "Idle/animations/coffee/south/frame_000.png",
+              "Idle/animations/coffee/south/frame_001.png",
+              "Idle/animations/coffee/south/frame_002.png",
+              "Idle/animations/coffee/south/frame_003.png",
+              "Idle/animations/coffee/south/frame_004.png",
+              "Idle/animations/coffee/south/frame_005.png",
+              "Idle/animations/coffee/south/frame_006.png",
+              "Idle/animations/coffee/south/frame_007.png"
+            ]
+          },
+          "type": {
+            "south": [
+              "Idle/animations/type/south/frame_000.png",
+              "Idle/animations/type/south/frame_001.png",
+              "Idle/animations/type/south/frame_002.png",
+              "Idle/animations/type/south/frame_003.png",
+              "Idle/animations/type/south/frame_004.png",
+              "Idle/animations/type/south/frame_005.png"
+            ]
+          },
+          "walk": {
+            "west": [
+              "Idle/animations/walk/west/frame_000.png",
+              "Idle/animations/walk/west/frame_001.png",
+              "Idle/animations/walk/west/frame_002.png",
+              "Idle/animations/walk/west/frame_003.png",
+              "Idle/animations/walk/west/frame_004.png",
+              "Idle/animations/walk/west/frame_005.png"
+            ],
+            "south": [
+              "Idle/animations/walk/south/frame_000.png",
+              "Idle/animations/walk/south/frame_001.png",
+              "Idle/animations/walk/south/frame_002.png",
+              "Idle/animations/walk/south/frame_003.png",
+              "Idle/animations/walk/south/frame_004.png",
+              "Idle/animations/walk/south/frame_005.png"
+            ],
+            "north": [
+              "Idle/animations/walk/north/frame_000.png",
+              "Idle/animations/walk/north/frame_001.png",
+              "Idle/animations/walk/north/frame_002.png",
+              "Idle/animations/walk/north/frame_003.png",
+              "Idle/animations/walk/north/frame_004.png",
+              "Idle/animations/walk/north/frame_005.png"
+            ],
+            "east": [
+              "Idle/animations/walk/east/frame_000.png",
+              "Idle/animations/walk/east/frame_001.png",
+              "Idle/animations/walk/east/frame_002.png",
+              "Idle/animations/walk/east/frame_003.png",
+              "Idle/animations/walk/east/frame_004.png",
+              "Idle/animations/walk/east/frame_005.png"
+            ]
+          },
+          "wave": {
+            "south": [
+              "Idle/animations/wave/south/frame_000.png",
+              "Idle/animations/wave/south/frame_001.png",
+              "Idle/animations/wave/south/frame_002.png",
+              "Idle/animations/wave/south/frame_003.png",
+              "Idle/animations/wave/south/frame_004.png",
+              "Idle/animations/wave/south/frame_005.png"
+            ]
+          },
+          "think": {
+            "south": [
+              "Idle/animations/think/south/frame_000.png",
+              "Idle/animations/think/south/frame_001.png",
+              "Idle/animations/think/south/frame_002.png",
+              "Idle/animations/think/south/frame_003.png",
+              "Idle/animations/think/south/frame_004.png",
+              "Idle/animations/think/south/frame_005.png"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "export_version": "3.1",
+  "export_date": "2026-10-25T16:21:39.407907"
+}

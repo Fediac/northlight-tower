@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en" data-dark="night" data-accent="violet">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:,">
+<title data-i18n="NorthLight Tower — Pixel Office">NorthLight Tower — Pixel Office</title>
+<link rel="stylesheet" href="theme.css">
+<link rel="stylesheet" href="ui.css">
+<link rel="stylesheet" href="office.css">
+<link rel="stylesheet" href="panel.css">
+<link rel="stylesheet" href="settingsui.css">
+<link rel="stylesheet" href="chat.css">
+<link rel="stylesheet" href="attachments.css">
+<link rel="stylesheet" href="inbox.css">
+<link rel="stylesheet" href="gallery.css">
+<link rel="stylesheet" href="questions.css">
+<!-- settings are read first: the selected theme (Purple night / Black) is applied before the first paint, so there is no flicker -->
+<script src="settings.js"></script>
+<!-- language: PO.lang, PO.t from the `lang` setting in settings.js; then the Turkish translation tables -->
+<script src="i18n.js"></script>
+<script src="tr_core.js"></script>
+<script src="tr_panel.js"></script>
+<script src="tr_ui.js"></script>
+<script src="tr_server.js"></script>
+</head>
+<body>
+<header>
+  <button id="navBtn" class="hbtn" type="button" aria-label="Chats" data-i18n-aria-label="Chats" aria-expanded="false" aria-controls="nav" data-tip="Code chats: open / close the sidebar grouped by project" data-i18n-tip="Code chats: open / close the sidebar grouped by project" data-tip-pos="bottom-start"><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><rect x="2.5" y="3.5" width="15" height="13" rx="2"/><path d="M7.5 3.5v13"/><path d="M4.4 7h1.3M4.4 9.5h1.3M4.4 12h1.3"/></svg><span class="lbl" data-i18n="Chats">Chats</span></button>
+  <h1><svg class="logo" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><path d="M7 2h6v3H7zM5 6h10v4H5zM3 11h14v7H3z" fill="currentColor"/><path d="M6 13h3v2H6zM11 13h3v2h-3z" style="fill:var(--bg)"/></svg><span class="t">NorthLight Tower</span></h1>
+  <div id="status" role="status" data-i18n="Connecting…">Connecting…</div>
+  <div class="btns">
+    <button id="homeBtn" class="hbtn" aria-label="Main office" data-i18n-aria-label="Main office" data-tip="Close the open panel and return to the office view" data-i18n-tip="Close the open panel and return to the office view" data-tip-pos="bottom-end"><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M3 9.5L10 3l7 6.5"/><path d="M5 8.5V17h10V8.5"/><path d="M8.5 17v-4.5h3V17"/></svg><span class="lbl" data-i18n="Main office">Main office</span></button>
+    <button id="galleryBtn" class="hbtn" aria-label="Gallery" data-i18n-aria-label="Gallery" data-tip="All images, GIFs and videos made so far" data-i18n-tip="All images, GIFs and videos made so far" data-tip-pos="bottom-end"><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><rect x="2.5" y="3.5" width="15" height="13" rx="2"/><circle cx="7.2" cy="8" r="1.4"/><path d="M3 14.5l4.2-3.7 3.3 2.7 2.4-2 4.1 3.7"/></svg><span class="lbl" data-i18n="Gallery">Gallery</span></button>
+    <button id="askBtn" class="hbtn" hidden aria-label="Question" data-i18n-aria-label="Question" aria-expanded="true" aria-controls="askdock" data-tip="Claude asked you a question: open / minimize the card" data-i18n-tip="Claude asked you a question: open / minimize the card" data-tip-pos="bottom-end"><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="M7.7 7.6a2.4 2.4 0 1 1 3.4 2.2c-.7.3-1.1.9-1.1 1.6v.6"/><path d="M10 14.6v.1"/></svg><span class="lbl" data-i18n="Question">Question</span><i id="askBadge" hidden></i></button>
+    <button id="inboxBtn" class="hbtn" aria-label="Replies" data-i18n-aria-label="Replies" data-tip="Replies from finished tasks" data-i18n-tip="Replies from finished tasks" data-tip-pos="bottom-end"><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M3 11l2-6h10l2 6v5H3z"/><path d="M3 11h4l1 2h4l1-2h4"/></svg><span class="lbl" data-i18n="Replies">Replies</span><i id="inboxBadge" hidden></i></button>
+    <button id="chatBtn" class="hbtn" aria-label="Messages" data-i18n-aria-label="Messages" data-tip="Write to workers on a wide screen" data-i18n-tip="Write to workers on a wide screen" data-tip-pos="bottom-end"><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M3 4h14v10H9l-4 3v-3H3z"/></svg><span class="lbl" data-i18n="Messages">Messages</span></button>
+    <button id="settingsBtn" class="hbtn" aria-label="Settings" data-i18n-aria-label="Settings" data-tip="Appearance and behavior settings" data-i18n-tip="Appearance and behavior settings" data-tip-pos="bottom-end"><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><circle cx="10" cy="10" r="2.6"/><path d="M10 2.5v2.2M10 15.3v2.2M2.5 10h2.2M15.3 10h2.2M4.7 4.7l1.6 1.6M13.7 13.7l1.6 1.6M15.3 4.7l-1.6 1.6M6.3 13.7l-1.6 1.6"/></svg><span class="lbl" data-i18n="Settings">Settings</span></button>
+  </div>
+</header>
+<div id="tabbar">
+  <button id="tabprev" class="tabnav" aria-label="Previous chat" data-i18n-aria-label="Previous chat" data-tip="Previous chat (Ctrl + ←)" data-i18n-tip="Previous chat (Ctrl + ←)" data-tip-pos="bottom-start">‹</button>
+  <div id="tabs" role="tablist" aria-label="Chats" data-i18n-aria-label="Chats"></div>
+  <button id="tabnext" class="tabnav" aria-label="Next chat" data-i18n-aria-label="Next chat" data-tip="Next chat (Ctrl + →)" data-i18n-tip="Next chat (Ctrl + →)" data-tip-pos="bottom-end">›</button>
+  <button id="tabadd" class="tabnav" type="button" aria-label="Add chat" data-i18n-aria-label="Add chat" aria-haspopup="dialog" aria-expanded="false" aria-controls="tabpick" data-tip="Add an earlier Claude chat to the tower" data-i18n-tip="Add an earlier Claude chat to the tower" data-tip-pos="bottom-end">+</button>
+  <div id="tabpick" role="dialog" aria-label="Add chat" data-i18n-aria-label="Add chat" hidden></div>
+</div>
+<main>
+  <aside id="nav" hidden></aside>
+  <section id="stage">
+    <canvas id="cv" width="960" height="540"></canvas>
+    <nav id="floors" aria-label="Floors" data-i18n-aria-label="Floors"></nav>
+    <div id="zoombar">
+      <button id="zall" aria-label="Show the whole tower" data-i18n-aria-label="Show the whole tower" data-tip="Show the whole tower" data-i18n-tip="Show the whole tower" data-tip-pos="bottom-end" data-i18n="All">All</button>
+      <button id="zin" aria-label="Zoom in" data-i18n-aria-label="Zoom in" data-tip="Zoom in (Ctrl + wheel)" data-i18n-tip="Zoom in (Ctrl + wheel)" data-tip-pos="bottom-end">+</button>
+      <button id="zout" aria-label="Zoom out" data-i18n-aria-label="Zoom out" data-tip="Zoom out" data-i18n-tip="Zoom out" data-tip-pos="bottom-end">−</button>
+    </div>
+    <div id="tip"></div>
+    <div id="holo" hidden></div>
+  </section>
+  <div id="splitter" role="separator" aria-orientation="vertical" aria-label="Panel width" data-i18n-aria-label="Panel width" tabindex="0" data-tip="Drag to widen / narrow the panel (double-click: reset)" data-i18n-tip="Drag to widen / narrow the panel (double-click: reset)" data-tip-pos="left"></div>
+  <aside id="side">
+    <div id="sum"></div>
+    <div id="detail"></div>
+    <h2 data-i18n="Workers">Workers</h2>
+    <div id="list"></div>
+    <h2 data-i18n="Recent activity">Recent activity</h2>
+    <div id="feed"></div>
+  </aside>
+</main>
+<div id="chatview" hidden></div>
+<div id="galleryview" hidden></div>
+<div id="inboxpop" hidden></div>
+<div id="reader" hidden></div>
+<div id="settings" hidden></div>
+<div id="lb" hidden>
+  <div class="lbbox" role="dialog" aria-modal="true" aria-label="Image" data-i18n-aria-label="Image">
+    <button class="lbx" id="lbx" title="Close (Esc)" data-i18n-title="Close (Esc)">×</button>
+    <div class="lbimgwrap"><img id="lbimg" alt=""><video id="lbvid" controls loop muted playsinline hidden></video></div>
+    <div class="lbcap"><b id="lbtitle"></b><small id="lbmeta"></small></div>
+    <div class="lbbar">
+      <button id="lbprev" title="Previous" data-i18n-title="Previous">‹</button>
+      <span id="lbpos"></span>
+      <button id="lbnext" title="Next" data-i18n-title="Next">›</button>
+      <span class="sp"></span>
+      <button id="lbrev" class="pri" data-i18n="Revise…">Revise…</button>
+      <button id="lbopen" data-i18n="Open in new tab">Open in new tab</button>
+    </div>
+  </div>
+</div>
+<div id="toasts" role="status" aria-live="polite"></div>
+<!-- the fixed texts above (English) are translated into the selected language; before the modules load -->
+<script>if (window.PO && PO.applyI18n) PO.applyI18n(document);</script>
+<script src="core.js"></script>
+<script src="md.js"></script>
+<script src="ui.js"></script>
+<script src="api.js"></script>
+<script src="attachments.js"></script>
+<script src="tower.js"></script>
+<script src="agents.js"></script>
+<script src="draw.js"></script>
+<script src="cam.js"></script>
+<script src="panel.js"></script>
+<script src="chat.js"></script>
+<script src="inbox.js"></script>
+<script src="questions.js"></script>
+<script src="gallery.js"></script>
+<script src="settingsui.js"></script>
+<script src="session.js"></script>
+<script src="nav.js"></script>
+<script src="main.js"></script>
+<script>
+/* safety net: if one of the page files failed to load (connection drop), the page reloads itself up to 2 times after 4 s; if that does not help, it shows a visible card */
+setTimeout(function () {
+  if (window.PO && PO.initDraw && PO.initPanel) { try { sessionStorage.removeItem('po_reload'); } catch (e) { /* */ } return; }
+  var n = 0;
+  try { n = +sessionStorage.getItem('po_reload') || 0; } catch (e) { /* */ }
+  if (n < 2) { try { sessionStorage.setItem('po_reload', String(n + 1)); } catch (e) { /* */ } location.reload(); return; }
+  var d = document.createElement('div');
+  d.setAttribute('role', 'alert');
+  d.style.cssText = 'position:fixed;left:50%;top:28%;transform:translateX(-50%);z-index:100;box-sizing:border-box;width:min(92vw,440px);padding:16px 18px;border-radius:12px;font:15px/1.5 system-ui,"Segoe UI",sans-serif;background:var(--panel,Canvas);color:var(--txt,CanvasText);border:1px solid var(--bad,currentColor);box-shadow:var(--shadow,none)';
+  var msg = 'The tower could not load. Refresh the page (F5). If that does not help, run Stop.bat, then Start.bat.';
+  d.textContent = window.PO && PO.t ? PO.t(msg) : msg;
+  document.body.appendChild(d);
+}, 4000);
+</script>
+</body>
+</html>

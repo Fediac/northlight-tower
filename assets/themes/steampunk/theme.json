@@ -1,0 +1,229 @@
+{
+ "id": "steampunk",
+ "name": "Steampunk clock tower",
+ "files": [
+  "bg/floor_galeri.png",
+  "bg/floor_galeri_glass.png",
+  "bg/floor_kod.png",
+  "bg/floor_kod_glass.png",
+  "bg/floor_lobi.png",
+  "bg/floor_lobi_glass.png",
+  "bg/floor_mudur.png",
+  "bg/floor_mudur_glass.png",
+  "bg/floor_tasarim.png",
+  "bg/floor_tasarim_glass.png",
+  "bg/skyline_far.png",
+  "bg/skyline_near_keyed.png",
+  "f/arcade.png",
+  "f/armchair.png",
+  "f/balcony_railing.png",
+  "f/bench.png",
+  "f/boxes.png",
+  "f/chair_small.png",
+  "f/coffee_machine.png",
+  "f/coffee_table.png",
+  "f/desk_b.png",
+  "f/easel.png",
+  "f/exec_chair.png",
+  "f/exec_desk_clean.png",
+  "f/exec_device.png",
+  "f/floor_lamp.png",
+  "f/monitor.png",
+  "f/plant_tall.png",
+  "f/poster_robot.png",
+  "f/poster_synth.png",
+  "f/printer.png",
+  "f/prop_cactus.png",
+  "f/prop_headphones.png",
+  "f/prop_mug.png",
+  "f/prop_ramen.png",
+  "f/reception_desk.png",
+  "f/server_rack.png",
+  "f/shelf_unit.png",
+  "f/sofa_a.png",
+  "f/trophy_case.png",
+  "f/vape_stand.png",
+  "f/vending.png",
+  "f/water_cooler.png",
+  "f/whiteboard.png",
+  "atlas/atlas.json",
+  "atlas/bilim.png",
+  "atlas/bluehair.png",
+  "atlas/cyborg.png",
+  "atlas/gasmask.png",
+  "atlas/gozluk.png",
+  "atlas/hacker.png",
+  "atlas/kedi.png",
+  "atlas/knight.png",
+  "atlas/mavi.png",
+  "atlas/mudire.png",
+  "atlas/mudur.png",
+  "atlas/pilot.png",
+  "atlas/punk.png",
+  "atlas/robot.png",
+  "atlas/samuray.png",
+  "atlas/sanatci.png",
+  "faces/hacker.png",
+  "faces/punk.png",
+  "faces/bluehair.png",
+  "faces/cyborg.png",
+  "faces/knight.png",
+  "faces/gasmask.png",
+  "faces/mavi.png",
+  "faces/gozluk.png",
+  "faces/kedi.png",
+  "faces/robot.png",
+  "faces/bilim.png",
+  "faces/sanatci.png",
+  "faces/pilot.png",
+  "faces/samuray.png",
+  "faces/mudur.png",
+  "faces/mudire.png"
+ ],
+ "floorNames": {
+  "mudur": "Chief Engineer's Room",
+  "kod": "Gears & Engineering Floor",
+  "tasarim": "Invention Hall",
+  "galeri": "Steam Gallery",
+  "lobi": "Airship Terrace & Lobby"
+ },
+ "floorShort": {
+  "mudur": "Engineer",
+  "kod": "Gears",
+  "tasarim": "Inventions",
+  "galeri": "Gallery",
+  "lobi": "Terrace"
+ },
+ "acc": {
+  "mudur": [
+   232,
+   172,
+   82
+  ],
+  "kod": [
+   204,
+   140,
+   72
+  ],
+  "tasarim": [
+   122,
+   204,
+   182
+  ],
+  "galeri": [
+   240,
+   204,
+   112
+  ],
+  "lobi": [
+   222,
+   124,
+   64
+  ]
+ },
+ "backdrop": {
+  "top": "#0e0804",
+  "bottom": "#2e1a0c",
+  "star": "#ffe2b0"
+ },
+ "roof": {
+  "top": "#0e0804",
+  "bottom": "#5a3216",
+  "star": "#ffe2b0",
+  "mast": "#3a2814",
+  "blink": "#ffcf70",
+  "blinkGlow": "#ffb040",
+  "signBg": "#1e1208",
+  "signEdge": "#d49a48",
+  "signHi": "rgba(212,154,72,.35)",
+  "signGlow": "#ffcf70",
+  "t0": "#ffcf70",
+  "t1": "#fff0cf",
+  "t2": "#c8a070"
+ },
+ "base": {
+  "fill": "#0c0703",
+  "line": "#d49a48",
+  "dash": "#2a1c10"
+ },
+ "sky": {
+  "fill": "#1a0f08",
+  "tint": "rgba(70,34,10,.24)",
+  "particle": {
+   "kind": "rise",
+   "color": "rgba(180,170,160,.4)",
+   "size": 2
+  },
+  "vehicles": {
+   "colors": [
+    "#c8b090",
+    "#a08868",
+    "#d8c8a0"
+   ],
+   "w": 6,
+   "h": 2
+  }
+ },
+ "fx": {
+  "beam": "#ffe0a0",
+  "beamGlow": "#ffc060",
+  "vapor": "#e8e0d0",
+  "vaporMask": "#d8cfc0",
+  "steam": "#f0ece4"
+ },
+ "glow": {
+  "lamp": "#ffcf70",
+  "sofa": "#ffa040",
+  "vape": "#ffe0a0",
+  "arcade": "#ffcf70",
+  "door": "#ffcf70",
+  "desk": "#c88a3c",
+  "rack": "#ffcf70",
+  "rackLed": "#2a1c11"
+ },
+ "gallery": {
+  "badge": "#e6b45e",
+  "hover": "#ffd890",
+  "glow": "#ffcf70",
+  "holo": [
+   255,
+   214,
+   140
+  ],
+  "holoLine": [
+   255,
+   225,
+   170
+  ],
+  "bg": "#100a05",
+  "holoBg": "#1a1006"
+ },
+ "board": {
+  "bg": "#1a1008",
+  "title": "#ffcf70",
+  "ticker": "#e8c080",
+  "tickerBg": "#2a1c10",
+  "line": "#6a4a28"
+ },
+ "elev": {
+  "leaf": "#5a4020",
+  "line": "#34240e",
+  "edge": "#a07838",
+  "inner": [
+   "#ffe9b8",
+   "#e0b068",
+   "#8a5e2a"
+  ],
+  "glow": "#ffd890"
+ },
+ "mon": {
+  "off": "#2a1e12",
+  "bezel": true
+ },
+ "lid": {
+  "outline": "#0a0603",
+  "body": "#6a4a28",
+  "hi": "#a07838",
+  "base": "#2e1e0e"
+ }
+}

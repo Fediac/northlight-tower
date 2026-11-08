@@ -1,0 +1,332 @@
+[
+ {
+  "name": "desk_b",
+  "w": 80,
+  "h": 57,
+  "canvas": [
+   80,
+   60
+  ],
+  "anchor": "bottom",
+  "role": "work desk seen from the front-three-quarter, flat top surface for a monitor, drawer block on the right side"
+ },
+ {
+  "name": "chair_small",
+  "w": 21,
+  "h": 29,
+  "canvas": [
+   32,
+   32
+  ],
+  "anchor": "bottom",
+  "role": "small swivel office chair seen from behind, seat and backrest"
+ },
+ {
+  "name": "exec_desk_clean",
+  "w": 145,
+  "h": 70,
+  "canvas": [
+   148,
+   72
+  ],
+  "anchor": "bottom",
+  "role": "large wide executive boss desk, front panel with a name plaque in the middle, empty clean tabletop"
+ },
+ {
+  "name": "exec_chair",
+  "w": 29,
+  "h": 50,
+  "canvas": [
+   32,
+   52
+  ],
+  "anchor": "bottom",
+  "role": "tall high-back boss chair seen from behind"
+ },
+ {
+  "name": "sofa_a",
+  "w": 88,
+  "h": 39,
+  "canvas": [
+   88,
+   40
+  ],
+  "anchor": "bottom",
+  "role": "three-seat sofa seen from the front, wide"
+ },
+ {
+  "name": "armchair",
+  "w": 36,
+  "h": 35,
+  "canvas": [
+   36,
+   36
+  ],
+  "anchor": "bottom",
+  "role": "single armchair seen from the front"
+ },
+ {
+  "name": "coffee_table",
+  "w": 44,
+  "h": 31,
+  "canvas": [
+   44,
+   32
+  ],
+  "anchor": "bottom",
+  "role": "low coffee table, wide and short"
+ },
+ {
+  "name": "arcade",
+  "w": 29,
+  "h": 62,
+  "canvas": [
+   32,
+   64
+  ],
+  "anchor": "bottom",
+  "role": "upright arcade-style game cabinet with a glowing screen, tall and narrow"
+ },
+ {
+  "name": "vape_stand",
+  "w": 20,
+  "h": 49,
+  "canvas": [
+   32,
+   52
+  ],
+  "anchor": "bottom",
+  "role": "tall narrow standing station where workers take a smoke or fresh-air break, small ash tray or rail on top"
+ },
+ {
+  "name": "floor_lamp",
+  "w": 10,
+  "h": 55,
+  "canvas": [
+   32,
+   56
+  ],
+  "anchor": "bottom",
+  "role": "very thin tall standing floor lamp with a glowing top"
+ },
+ {
+  "name": "plant_tall",
+  "w": 40,
+  "h": 57,
+  "canvas": [
+   40,
+   60
+  ],
+  "anchor": "bottom",
+  "role": "tall leafy potted plant in a pot"
+ },
+ {
+  "name": "server_rack",
+  "w": 24,
+  "h": 65,
+  "canvas": [
+   32,
+   68
+  ],
+  "anchor": "bottom",
+  "role": "tall narrow cabinet full of blinking indicator lights or small glowing devices"
+ },
+ {
+  "name": "coffee_machine",
+  "w": 24,
+  "h": 43,
+  "canvas": [
+   32,
+   44
+  ],
+  "anchor": "bottom",
+  "role": "drink dispenser machine for hot beverages, tall narrow"
+ },
+ {
+  "name": "easel",
+  "w": 32,
+  "h": 55,
+  "canvas": [
+   32,
+   56
+  ],
+  "anchor": "bottom",
+  "role": "painter's easel with a canvas and a paint palette"
+ },
+ {
+  "name": "reception_desk",
+  "w": 68,
+  "h": 41,
+  "canvas": [
+   68,
+   44
+  ],
+  "anchor": "bottom",
+  "role": "front reception counter desk, wide, front panel visible"
+ },
+ {
+  "name": "trophy_case",
+  "w": 42,
+  "h": 58,
+  "canvas": [
+   44,
+   60
+  ],
+  "anchor": "bottom",
+  "role": "tall glass display cabinet with trophies and curios"
+ },
+ {
+  "name": "shelf_unit",
+  "w": 52,
+  "h": 62,
+  "canvas": [
+   52,
+   64
+  ],
+  "anchor": "bottom",
+  "role": "tall bookshelf with books and small objects on several shelves"
+ },
+ {
+  "name": "whiteboard",
+  "w": 53,
+  "h": 55,
+  "canvas": [
+   56,
+   56
+  ],
+  "anchor": "bottom",
+  "role": "standing planning board on wheels or legs with notes and a diagram"
+ },
+ {
+  "name": "printer",
+  "w": 26,
+  "h": 35,
+  "canvas": [
+   32,
+   36
+  ],
+  "anchor": "bottom",
+  "role": "small office machine that prints paper, on a stand"
+ },
+ {
+  "name": "boxes",
+  "w": 23,
+  "h": 37,
+  "canvas": [
+   32,
+   40
+  ],
+  "anchor": "bottom",
+  "role": "small stack of storage crates or boxes"
+ },
+ {
+  "name": "poster_robot",
+  "w": 29,
+  "h": 41,
+  "canvas": [
+   32,
+   44
+  ],
+  "anchor": "top",
+  "role": "framed wall poster / picture, portrait orientation"
+ },
+ {
+  "name": "poster_synth",
+  "w": 28,
+  "h": 44,
+  "canvas": [
+   32,
+   44
+  ],
+  "anchor": "top",
+  "role": "framed wall poster / picture, portrait orientation, different artwork"
+ },
+ {
+  "name": "vending",
+  "w": 37,
+  "h": 62,
+  "canvas": [
+   40,
+   64
+  ],
+  "anchor": "bottom",
+  "role": "tall snack and drink vending machine, front view"
+ },
+ {
+  "name": "water_cooler",
+  "w": 21,
+  "h": 44,
+  "canvas": [
+   32,
+   44
+  ],
+  "anchor": "bottom",
+  "role": "drinking water dispenser, tall narrow"
+ },
+ {
+  "name": "bench",
+  "w": 63,
+  "h": 27,
+  "canvas": [
+   64,
+   32
+  ],
+  "anchor": "bottom",
+  "role": "long low bench, wide"
+ },
+ {
+  "name": "balcony_railing",
+  "w": 95,
+  "h": 29,
+  "canvas": [
+   96,
+   32
+  ],
+  "anchor": "bottom",
+  "role": "wide balcony railing section, see-through, to be tiled horizontally"
+ },
+ {
+  "name": "prop_mug",
+  "w": 14,
+  "h": 20,
+  "canvas": [
+   32,
+   32
+  ],
+  "anchor": "bottom",
+  "role": "small cup with a hot drink, tiny desk prop"
+ },
+ {
+  "name": "prop_ramen",
+  "w": 17,
+  "h": 22,
+  "canvas": [
+   32,
+   32
+  ],
+  "anchor": "bottom",
+  "role": "small bowl of food with steam, tiny desk prop"
+ },
+ {
+  "name": "prop_cactus",
+  "w": 12,
+  "h": 19,
+  "canvas": [
+   32,
+   32
+  ],
+  "anchor": "bottom",
+  "role": "tiny potted plant, tiny desk prop"
+ },
+ {
+  "name": "prop_headphones",
+  "w": 20,
+  "h": 18,
+  "canvas": [
+   32,
+   32
+  ],
+  "anchor": "bottom",
+  "role": "tiny desk prop: headphones or a small gadget lying on the desk"
+ }
+]

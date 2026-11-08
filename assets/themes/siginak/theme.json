@@ -1,0 +1,192 @@
+{
+ "id": "siginak",
+ "name": "Post-apocalyptic bunker",
+ "files": [
+  "bg/floor_galeri.png",
+  "bg/floor_galeri_glass.png",
+  "bg/floor_kod.png",
+  "bg/floor_kod_glass.png",
+  "bg/floor_lobi.png",
+  "bg/floor_lobi_glass.png",
+  "bg/floor_mudur.png",
+  "bg/floor_mudur_glass.png",
+  "bg/floor_tasarim.png",
+  "bg/floor_tasarim_glass.png",
+  "bg/skyline_far.png",
+  "bg/skyline_near_keyed.png",
+  "f/arcade.png",
+  "f/armchair.png",
+  "f/balcony_railing.png",
+  "f/bench.png",
+  "f/boxes.png",
+  "f/chair_small.png",
+  "f/coffee_machine.png",
+  "f/coffee_table.png",
+  "f/desk_b.png",
+  "f/easel.png",
+  "f/exec_chair.png",
+  "f/exec_desk_clean.png",
+  "f/exec_device.png",
+  "f/floor_lamp.png",
+  "f/monitor.png",
+  "f/plant_tall.png",
+  "f/poster_robot.png",
+  "f/poster_synth.png",
+  "f/printer.png",
+  "f/prop_cactus.png",
+  "f/prop_headphones.png",
+  "f/prop_mug.png",
+  "f/prop_ramen.png",
+  "f/reception_desk.png",
+  "f/server_rack.png",
+  "f/shelf_unit.png",
+  "f/sofa_a.png",
+  "f/trophy_case.png",
+  "f/vape_stand.png",
+  "f/vending.png",
+  "f/water_cooler.png",
+  "f/whiteboard.png"
+ ],
+ "floorNames": {
+  "mudur": "Commander's Room",
+  "kod": "Terminal & Generator Floor",
+  "tasarim": "CRT Screen Gallery",
+  "galeri": "Archive Gallery",
+  "lobi": "Jukebox & Lounge"
+ },
+ "floorShort": {
+  "mudur": "Commander",
+  "kod": "Terminal",
+  "tasarim": "Screens",
+  "galeri": "Archive",
+  "lobi": "Lounge"
+ },
+ "acc": {
+  "mudur": [
+   255,
+   204,
+   48
+  ],
+  "kod": [
+   152,
+   232,
+   92
+  ],
+  "tasarim": [
+   255,
+   160,
+   48
+  ],
+  "galeri": [
+   124,
+   224,
+   156
+  ],
+  "lobi": [
+   232,
+   204,
+   64
+  ]
+ },
+ "backdrop": {
+  "top": "#0a0603",
+  "bottom": "#2a1608",
+  "star": "#ffe0b0"
+ },
+ "roof": {
+  "top": "#0a0603",
+  "bottom": "#4a2410",
+  "star": "#ffe0b0",
+  "mast": "#2c3022",
+  "blink": "#ffcc30",
+  "blinkGlow": "#ffb000",
+  "signBg": "#0e1008",
+  "signEdge": "#d9a21b",
+  "signHi": "rgba(217,162,27,.35)",
+  "signGlow": "#98e85c",
+  "t0": "#ffcc30",
+  "t1": "#d8f0a0",
+  "t2": "#8a907a"
+ },
+ "base": {
+  "fill": "#060704",
+  "line": "#d9a21b",
+  "dash": "#1e2216"
+ },
+ "sky": {
+  "fill": "#1a0e06",
+  "tint": "rgba(80,30,6,.26)",
+  "particle": {
+   "kind": "dust",
+   "color": "rgba(200,160,110,.5)",
+   "size": 1
+  },
+  "vehicles": {
+   "colors": [],
+   "w": 2,
+   "h": 1
+  }
+ },
+ "fx": {
+  "beam": "#d8f0a0",
+  "beamGlow": "#98e85c",
+  "vapor": "#c8d8a8",
+  "vaporMask": "#b8c898",
+  "steam": "#e0e8d0"
+ },
+ "glow": {
+  "lamp": "#e8e08a",
+  "sofa": "#e8cc40",
+  "vape": "#98e85c",
+  "arcade": "#98e85c",
+  "door": "#d9a21b",
+  "desk": "#7aa04a",
+  "rack": "#98e85c",
+  "rackLed": "#171910"
+ },
+ "gallery": {
+  "badge": "#d9a21b",
+  "hover": "#ffcc30",
+  "glow": "#98e85c",
+  "holo": [
+   152,
+   232,
+   92
+  ],
+  "holoLine": [
+   170,
+   245,
+   110
+  ],
+  "bg": "#060804",
+  "holoBg": "#030a03"
+ },
+ "board": {
+  "bg": "#070904",
+  "title": "#98e85c",
+  "ticker": "#98e85c",
+  "tickerBg": "#0e1409",
+  "line": "#3a4a22"
+ },
+ "elev": {
+  "leaf": "#4a4e3a",
+  "line": "#2c301e",
+  "edge": "#d9a21b",
+  "inner": [
+   "#f4ecb8",
+   "#d8c878",
+   "#7a6a2c"
+  ],
+  "glow": "#e8e08a"
+ },
+ "mon": {
+  "off": "#141a0e",
+  "bezel": true
+ },
+ "lid": {
+  "outline": "#050604",
+  "body": "#4a4f3e",
+  "hi": "#7a806a",
+  "base": "#20231a"
+ }
+}

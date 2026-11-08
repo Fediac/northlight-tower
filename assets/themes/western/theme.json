@@ -1,0 +1,228 @@
+{
+ "id": "western",
+ "name": "Wild West town",
+ "files": [
+  "bg/floor_galeri.png",
+  "bg/floor_galeri_glass.png",
+  "bg/floor_kod.png",
+  "bg/floor_kod_glass.png",
+  "bg/floor_lobi.png",
+  "bg/floor_lobi_glass.png",
+  "bg/floor_mudur.png",
+  "bg/floor_mudur_glass.png",
+  "bg/floor_tasarim.png",
+  "bg/floor_tasarim_glass.png",
+  "bg/skyline_far.png",
+  "bg/skyline_near_keyed.png",
+  "f/arcade.png",
+  "f/armchair.png",
+  "f/balcony_railing.png",
+  "f/bench.png",
+  "f/boxes.png",
+  "f/chair_small.png",
+  "f/coffee_machine.png",
+  "f/coffee_table.png",
+  "f/desk_b.png",
+  "f/easel.png",
+  "f/exec_chair.png",
+  "f/exec_desk_clean.png",
+  "f/exec_device.png",
+  "f/floor_lamp.png",
+  "f/monitor.png",
+  "f/plant_tall.png",
+  "f/poster_robot.png",
+  "f/poster_synth.png",
+  "f/printer.png",
+  "f/prop_cactus.png",
+  "f/prop_headphones.png",
+  "f/prop_mug.png",
+  "f/prop_ramen.png",
+  "f/reception_desk.png",
+  "f/server_rack.png",
+  "f/shelf_unit.png",
+  "f/sofa_a.png",
+  "f/trophy_case.png",
+  "f/vape_stand.png",
+  "f/vending.png",
+  "f/water_cooler.png",
+  "f/whiteboard.png",
+  "atlas/atlas.json",
+  "atlas/bilim.png",
+  "atlas/bluehair.png",
+  "atlas/cyborg.png",
+  "atlas/gasmask.png",
+  "atlas/gozluk.png",
+  "atlas/hacker.png",
+  "atlas/kedi.png",
+  "atlas/knight.png",
+  "atlas/mavi.png",
+  "atlas/mudire.png",
+  "atlas/mudur.png",
+  "atlas/pilot.png",
+  "atlas/punk.png",
+  "atlas/robot.png",
+  "atlas/samuray.png",
+  "atlas/sanatci.png",
+  "faces/hacker.png",
+  "faces/punk.png",
+  "faces/bluehair.png",
+  "faces/cyborg.png",
+  "faces/knight.png",
+  "faces/gasmask.png",
+  "faces/mavi.png",
+  "faces/gozluk.png",
+  "faces/kedi.png",
+  "faces/robot.png",
+  "faces/bilim.png",
+  "faces/sanatci.png",
+  "faces/pilot.png",
+  "faces/samuray.png",
+  "faces/mudur.png",
+  "faces/mudire.png"
+ ],
+ "floorNames": {
+  "mudur": "Sheriff's Office",
+  "kod": "Telegraph & Map Room",
+  "tasarim": "Posters & Workshop",
+  "galeri": "Saloon Gallery",
+  "lobi": "Saloon & Lounge"
+ },
+ "floorShort": {
+  "mudur": "Sheriff",
+  "kod": "Telegraph",
+  "tasarim": "Workshop",
+  "galeri": "Gallery",
+  "lobi": "Saloon"
+ },
+ "acc": {
+  "mudur": [
+   236,
+   184,
+   72
+  ],
+  "kod": [
+   214,
+   132,
+   72
+  ],
+  "tasarim": [
+   210,
+   92,
+   70
+  ],
+  "galeri": [
+   124,
+   190,
+   112
+  ],
+  "lobi": [
+   255,
+   170,
+   70
+  ]
+ },
+ "backdrop": {
+  "top": "#1a0c06",
+  "bottom": "#4a2210",
+  "star": "#ffd9a0"
+ },
+ "roof": {
+  "top": "#1a0c06",
+  "bottom": "#7a3a14",
+  "star": "#ffe2b0",
+  "mast": "#3a2412",
+  "blink": "#ffb040",
+  "blinkGlow": "#ff9a30",
+  "signBg": "#2a170a",
+  "signEdge": "#e0a850",
+  "signHi": "rgba(224,168,80,.35)",
+  "signGlow": "#ffb050",
+  "t0": "#ffcf70",
+  "t1": "#fff0cf",
+  "t2": "#c8a070"
+ },
+ "base": {
+  "fill": "#150c06",
+  "line": "#c88a3c",
+  "dash": "#3a2412"
+ },
+ "sky": {
+  "fill": "#2a1408",
+  "tint": "rgba(140,60,10,.16)",
+  "particle": {
+   "kind": "dust",
+   "color": "rgba(240,200,140,.55)",
+   "size": 1
+  },
+  "vehicles": {
+   "colors": [
+    "#1a0f08",
+    "#2a1a10"
+   ],
+   "w": 3,
+   "h": 1
+  }
+ },
+ "fx": {
+  "beam": "#ffe0a0",
+  "beamGlow": "#ffc060",
+  "vapor": "#e8d8c0",
+  "vaporMask": "#d8c8b0",
+  "steam": "#f4ead8"
+ },
+ "glow": {
+  "lamp": "#ffc060",
+  "sofa": "#ffa040",
+  "vape": "#ffd890",
+  "arcade": "#ffc060",
+  "door": "#ffc060",
+  "desk": "#c88a3c",
+  "rack": "#ffc060",
+  "rackLed": "#24150b"
+ },
+ "gallery": {
+  "badge": "#e0a850",
+  "hover": "#ffd070",
+  "glow": "#ffc060",
+  "holo": [
+   255,
+   200,
+   120
+  ],
+  "holoLine": [
+   255,
+   215,
+   150
+  ],
+  "bg": "#100904",
+  "holoBg": "#1a0e05"
+ },
+ "board": {
+  "bg": "#1c1008",
+  "title": "#ffcf70",
+  "ticker": "#e8c080",
+  "tickerBg": "#2a190c",
+  "line": "#6a4526"
+ },
+ "elev": {
+  "leaf": "#4a3220",
+  "line": "#2e1e10",
+  "edge": "#7a5630",
+  "inner": [
+   "#ffe9b8",
+   "#e0b068",
+   "#8a5e2a"
+  ],
+  "glow": "#ffd890"
+ },
+ "mon": {
+  "off": "#2a1d10",
+  "bezel": true
+ },
+ "lid": {
+  "outline": "#0c0704",
+  "body": "#5a3a20",
+  "hi": "#8a5e30",
+  "base": "#2a1a0c"
+ }
+}

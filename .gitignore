@@ -1,0 +1,16 @@
+# Runtime data: personal answers, gallery, uploads, token. Must NEVER be published.
+_cache/
+# Production raw files and old backups (they stay on disk, do not go into the repo)
+_work/
+_yedek/
+__pycache__/
+*.pyc
+*.bak
+# Local Claude permissions
+.claude/settings.local.json
+# Windows
+Thumbs.db
+desktop.ini
+dist/
+# Process id of the running server
+.tower.pid

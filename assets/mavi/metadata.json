@@ -1,0 +1,119 @@
+{
+  "group_id": "d86483c6-589a-44c7-8806-222dc2409a2f",
+  "states": [
+    {
+      "character": {
+        "id": "6f77c079-aeff-466e-810c-18dc0bd81b57",
+        "name": "Idle",
+        "prompt": "cool young person with spiky bright blue hair, bright yellow bomber jacket with black stripes, dark pants, white sneakers, black sunglasses pushed up on the forehead, confident",
+        "size": {
+          "width": 68,
+          "height": 68
+        },
+        "template_id": "mannequin",
+        "directions": 4,
+        "view": "low top-down",
+        "created_at": "2026-10-25T15:35:33.097366+00:00"
+      },
+      "folder": "Idle",
+      "frames": {
+        "rotations": {
+          "south": "Idle/rotations/south.png",
+          "west": "Idle/rotations/west.png",
+          "east": "Idle/rotations/east.png",
+          "north": "Idle/rotations/north.png"
+        },
+        "animations": {
+          "walk": {
+            "east": [
+              "Idle/animations/walk/east/frame_000.png",
+              "Idle/animations/walk/east/frame_001.png",
+              "Idle/animations/walk/east/frame_002.png",
+              "Idle/animations/walk/east/frame_003.png",
+              "Idle/animations/walk/east/frame_004.png",
+              "Idle/animations/walk/east/frame_005.png"
+            ],
+            "west": [
+              "Idle/animations/walk/west/frame_000.png",
+              "Idle/animations/walk/west/frame_001.png",
+              "Idle/animations/walk/west/frame_002.png",
+              "Idle/animations/walk/west/frame_003.png",
+              "Idle/animations/walk/west/frame_004.png",
+              "Idle/animations/walk/west/frame_005.png"
+            ],
+            "south": [
+              "Idle/animations/walk/south/frame_000.png",
+              "Idle/animations/walk/south/frame_001.png",
+              "Idle/animations/walk/south/frame_002.png",
+              "Idle/animations/walk/south/frame_003.png",
+              "Idle/animations/walk/south/frame_004.png",
+              "Idle/animations/walk/south/frame_005.png"
+            ],
+            "north": [
+              "Idle/animations/walk/north/frame_000.png",
+              "Idle/animations/walk/north/frame_001.png",
+              "Idle/animations/walk/north/frame_002.png",
+              "Idle/animations/walk/north/frame_003.png",
+              "Idle/animations/walk/north/frame_004.png",
+              "Idle/animations/walk/north/frame_005.png"
+            ]
+          },
+          "wave": {
+            "north": [
+              "Idle/animations/wave/north/frame_000.png",
+              "Idle/animations/wave/north/frame_001.png",
+              "Idle/animations/wave/north/frame_002.png",
+              "Idle/animations/wave/north/frame_003.png",
+              "Idle/animations/wave/north/frame_004.png",
+              "Idle/animations/wave/north/frame_005.png"
+            ]
+          },
+          "type": {
+            "north": [
+              "Idle/animations/type/north/frame_000.png",
+              "Idle/animations/type/north/frame_001.png",
+              "Idle/animations/type/north/frame_002.png",
+              "Idle/animations/type/north/frame_003.png",
+              "Idle/animations/type/north/frame_004.png",
+              "Idle/animations/type/north/frame_005.png"
+            ]
+          },
+          "think": {
+            "north": [
+              "Idle/animations/think/north/frame_000.png",
+              "Idle/animations/think/north/frame_001.png",
+              "Idle/animations/think/north/frame_002.png",
+              "Idle/animations/think/north/frame_003.png",
+              "Idle/animations/think/north/frame_004.png",
+              "Idle/animations/think/north/frame_005.png"
+            ]
+          },
+          "rest": {
+            "south": [
+              "Idle/animations/rest/south/frame_000.png",
+              "Idle/animations/rest/south/frame_001.png",
+              "Idle/animations/rest/south/frame_002.png",
+              "Idle/animations/rest/south/frame_003.png",
+              "Idle/animations/rest/south/frame_004.png",
+              "Idle/animations/rest/south/frame_005.png"
+            ]
+          },
+          "vape": {
+            "east": [
+              "Idle/animations/vape/east/frame_000.png",
+              "Idle/animations/vape/east/frame_001.png",
+              "Idle/animations/vape/east/frame_002.png",
+              "Idle/animations/vape/east/frame_003.png",
+              "Idle/animations/vape/east/frame_004.png",
+              "Idle/animations/vape/east/frame_005.png",
+              "Idle/animations/vape/east/frame_006.png",
+              "Idle/animations/vape/east/frame_007.png"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "export_version": "3.1",
+  "export_date": "2026-10-25T15:59:17.938971"
+}

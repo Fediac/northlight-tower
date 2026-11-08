@@ -1,0 +1,40 @@
+{
+  "staff": [
+    { "char": "hacker",   "nick": "Hayalet", "nick_en": "Ghost" },
+    { "char": "punk",     "nick": "Pank", "nick_en": "Punk" },
+    { "char": "bluehair", "nick": "Deniz", "nick_en": "Indigo" },
+    { "char": "cyborg",   "nick": "Siber", "nick_en": "Cyber" },
+    { "char": "knight",   "nick": "Şövalye", "nick_en": "Knight" },
+    { "char": "gasmask",  "nick": "Maske", "nick_en": "Mask" },
+    { "char": "mavi",     "nick": "Mavi", "nick_en": "Azure" },
+    { "char": "gozluk",   "nick": "Usta", "nick_en": "Maestro" },
+    { "char": "kedi",     "nick": "Neko", "nick_en": "Neko" },
+    { "char": "robot",    "nick": "Robi", "nick_en": "Robi" },
+    { "char": "bilim",    "nick": "Prof", "nick_en": "Prof" },
+    { "char": "sanatci",  "nick": "Defne", "nick_en": "Daphne" },
+    { "char": "pilot",    "nick": "Pilot", "nick_en": "Pilot" },
+    { "char": "samuray",  "nick": "Samuray", "nick_en": "Samurai" }
+  ],
+  "bosses": [
+    { "char": "mudur",  "nick": "Müdür", "nick_en": "Manager" },
+    { "char": "mudire", "nick": "Müdire", "nick_en": "Manager" }
+  ],
+  "types_tr": {
+    "general-purpose": "Uzman",
+    "Explore": "Araştırmacı",
+    "Plan": "Planlayıcı",
+    "claude-code-guide": "Rehber",
+    "statusline-setup": "Ayarcı",
+    "teammate": "Takım arkadaşı"
+  },
+  "type_default_tr": "Çalışan",
+  "types_en": {
+    "general-purpose": "Specialist",
+    "Explore": "Researcher",
+    "Plan": "Planner",
+    "claude-code-guide": "Guide",
+    "statusline-setup": "Setup helper",
+    "teammate": "Teammate"
+  },
+  "type_default_en": "Worker"
+}

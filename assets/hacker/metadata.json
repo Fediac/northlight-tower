@@ -1,0 +1,129 @@
+{
+  "group_id": "3c36ffa2-2dd7-4ae2-b54f-2b795a0374f8",
+  "states": [
+    {
+      "character": {
+        "id": "a821ec82-4a64-4c94-930e-d377c6323ef3",
+        "name": "Idle",
+        "prompt": "cyberpunk hacker with sunglasses and mustache, black vest over white shirt, dark skin, neat hair",
+        "size": {
+          "width": 68,
+          "height": 68
+        },
+        "template_id": "mannequin",
+        "directions": 4,
+        "view": "low top-down",
+        "created_at": "2026-10-24T23:45:17.926795+00:00"
+      },
+      "folder": "Idle",
+      "frames": {
+        "rotations": {
+          "south": "Idle/rotations/south.png",
+          "west": "Idle/rotations/west.png",
+          "east": "Idle/rotations/east.png",
+          "north": "Idle/rotations/north.png"
+        },
+        "animations": {
+          "rest": {
+            "south": [
+              "Idle/animations/rest/south/frame_000.png",
+              "Idle/animations/rest/south/frame_001.png",
+              "Idle/animations/rest/south/frame_002.png",
+              "Idle/animations/rest/south/frame_003.png",
+              "Idle/animations/rest/south/frame_004.png",
+              "Idle/animations/rest/south/frame_005.png"
+            ]
+          },
+          "think": {
+            "north": [
+              "Idle/animations/think/north/frame_000.png",
+              "Idle/animations/think/north/frame_001.png",
+              "Idle/animations/think/north/frame_002.png",
+              "Idle/animations/think/north/frame_003.png",
+              "Idle/animations/think/north/frame_004.png",
+              "Idle/animations/think/north/frame_005.png"
+            ]
+          },
+          "vape": {
+            "east": [
+              "Idle/animations/vape/east/frame_000.png",
+              "Idle/animations/vape/east/frame_001.png",
+              "Idle/animations/vape/east/frame_002.png",
+              "Idle/animations/vape/east/frame_003.png",
+              "Idle/animations/vape/east/frame_004.png",
+              "Idle/animations/vape/east/frame_005.png",
+              "Idle/animations/vape/east/frame_006.png",
+              "Idle/animations/vape/east/frame_007.png"
+            ]
+          },
+          "type": {
+            "west": [
+              "Idle/animations/type/west/frame_000.png",
+              "Idle/animations/type/west/frame_001.png",
+              "Idle/animations/type/west/frame_002.png",
+              "Idle/animations/type/west/frame_003.png",
+              "Idle/animations/type/west/frame_004.png",
+              "Idle/animations/type/west/frame_005.png"
+            ]
+          },
+          "walk": {
+            "north": [
+              "Idle/animations/walk/north/frame_000.png",
+              "Idle/animations/walk/north/frame_001.png",
+              "Idle/animations/walk/north/frame_002.png",
+              "Idle/animations/walk/north/frame_003.png",
+              "Idle/animations/walk/north/frame_004.png",
+              "Idle/animations/walk/north/frame_005.png"
+            ],
+            "south": [
+              "Idle/animations/walk/south/frame_000.png",
+              "Idle/animations/walk/south/frame_001.png",
+              "Idle/animations/walk/south/frame_002.png",
+              "Idle/animations/walk/south/frame_003.png",
+              "Idle/animations/walk/south/frame_004.png",
+              "Idle/animations/walk/south/frame_005.png"
+            ],
+            "west": [
+              "Idle/animations/walk/west/frame_000.png",
+              "Idle/animations/walk/west/frame_001.png",
+              "Idle/animations/walk/west/frame_002.png",
+              "Idle/animations/walk/west/frame_003.png",
+              "Idle/animations/walk/west/frame_004.png",
+              "Idle/animations/walk/west/frame_005.png"
+            ],
+            "east": [
+              "Idle/animations/walk/east/frame_000.png",
+              "Idle/animations/walk/east/frame_001.png",
+              "Idle/animations/walk/east/frame_002.png",
+              "Idle/animations/walk/east/frame_003.png",
+              "Idle/animations/walk/east/frame_004.png",
+              "Idle/animations/walk/east/frame_005.png"
+            ]
+          },
+          "wave": {
+            "north": [
+              "Idle/animations/wave/north/frame_000.png",
+              "Idle/animations/wave/north/frame_001.png",
+              "Idle/animations/wave/north/frame_002.png",
+              "Idle/animations/wave/north/frame_003.png",
+              "Idle/animations/wave/north/frame_004.png",
+              "Idle/animations/wave/north/frame_005.png"
+            ]
+          },
+          "type-de2fe54b": {
+            "north": [
+              "Idle/animations/type-de2fe54b/north/frame_000.png",
+              "Idle/animations/type-de2fe54b/north/frame_001.png",
+              "Idle/animations/type-de2fe54b/north/frame_002.png",
+              "Idle/animations/type-de2fe54b/north/frame_003.png",
+              "Idle/animations/type-de2fe54b/north/frame_004.png",
+              "Idle/animations/type-de2fe54b/north/frame_005.png"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "export_version": "3.1",
+  "export_date": "2026-10-25T14:23:57.318007"
+}

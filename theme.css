@@ -1,0 +1,64 @@
+/* NorthLight Tower — theme variables. The whole UI uses ONLY these variables (do not write color constants).
+   settings.js sets the <html data-dark="night|black" data-accent="violet|cyan|pink|emerald|amber"> attributes.
+   Layers: (1) surface palette (Purple night / Black), (2) accent palette (5 colors), (3) helpers derived from them.
+   Derived variables are computed only from the base variables; so they are automatically compatible in both themes. */
+:root {
+  /* surfaces: "Purple night" (default) */
+  --bg:#0d0a22; --panel:#17123a; --panel2:#1d1747; --panel3:#261e5c; --line:#352c72;
+  --txt:#e8e4ff; --dim:#a39cd6; --faint:#9a94cf;      /* --faint: faded but readable text (>= 4.5:1 on backgrounds) */
+  --stage-bg:#000000;
+  /* accent: "Violet" (default) */
+  --accent:#6d4df0; --accent-bright:#9d87ff; --accent-ink:#ffffff; --accent-soft:rgba(122,92,255,.20);
+  /* outline color on hover / selection (settings.js: --accent-bright if hover.color is 'auto') */
+  --hover:#9d87ff;
+  /* status colors */
+  --ok:#46e0a0; --bad:#ff4d6a; --warn:#ffc44d; --gold:#ffc44d; --cyan:#3df2ff; --pink:#ff3df0;
+  --on-bad:#07070d;            /* text on a red background (dark: 6.2:1; white would stay at 3.2:1) */
+  --badge-bg:var(--accent); --badge-ink:var(--accent-ink);   /* neutral/accent badge (Chat button, unread count); red is only for waiting for approval */
+  --ink:#07070d;               /* dark text on a bright background (pill, badge, floor number) */
+  --radius:8px; --radius-lg:12px; --fs:13px; --fs-s:11.5px; --fs-l:15px;
+  --shadow:0 10px 32px rgba(0,0,0,.5); --glow:0 0 0 1px var(--accent-soft), 0 0 18px var(--accent-soft);
+  --scrim:rgba(4,3,10,.78);
+  --holo:#3df2ff; --holo-soft:rgba(61,242,255,.14);
+
+  /* ---- derived helpers (work in both themes) ---- */
+  --btn:var(--panel3);                                              /* flat button background */
+  --btn-hover:color-mix(in srgb, var(--panel3), var(--accent) 30%);
+  --glass:color-mix(in srgb, var(--bg) 82%, transparent);          /* semi-transparent button/label background over the stage */
+  --glass-2:color-mix(in srgb, var(--panel) 94%, transparent);     /* tip, card */
+  --hair:color-mix(in srgb, var(--txt) 9%, transparent);           /* thin fill (pill, hover) */
+  --ok-soft:color-mix(in srgb, var(--ok) 20%, transparent);
+  --bad-soft:color-mix(in srgb, var(--bad) 26%, transparent);
+  --bad-text:color-mix(in srgb, var(--bad), var(--txt) 38%);        /* red text readable on a dark background */
+  --note-bg:color-mix(in srgb, var(--cyan) 12%, var(--panel));      /* system note */
+  --note-line:color-mix(in srgb, var(--cyan) 38%, var(--line));
+  --note-txt:color-mix(in srgb, var(--cyan), var(--txt) 55%);
+  --bubble-me:color-mix(in srgb, var(--accent) 58%, var(--panel));
+  --bubble-ag:color-mix(in srgb, var(--panel3) 70%, var(--panel));
+  --bubble-bad:color-mix(in srgb, var(--bad) 55%, var(--panel));
+  --code:color-mix(in srgb, var(--accent-bright), var(--txt) 35%);
+  --checker-a:var(--panel); --checker-b:var(--panel2);              /* checkerboard background for transparent images */
+}
+/* dark mode: "Black" — fully neutral (no blue/purple tint) */
+:root[data-dark="black"] {
+  --bg:#000000; --panel:#0b0b0c; --panel2:#131314; --panel3:#1c1c1e; --line:#2b2b2e;
+  --txt:#ededee; --dim:#a1a1a6; --faint:#8e8e94;
+  --stage-bg:#000000;
+  --scrim:rgba(0,0,0,.86);
+  --shadow:0 10px 32px rgba(0,0,0,.8);
+}
+/* dark mode: "Theme tone" — the background takes the color of the selected world theme itself (data-theme comes from settings.js) */
+:root[data-dark="tone"][data-theme="fener"]     { --bg:#07131a; --panel:#0e1f27; --panel2:#132a34; --panel3:#1b3944; --line:#2a4d5a; --txt:#e4efec; --dim:#9bbdb6; --faint:#8fb0a9; --scrim:rgba(2,8,12,.82); }
+:root[data-dark="tone"][data-theme="buyucu"]    { --bg:#100a22; --panel:#1a1236; --panel2:#221a44; --panel3:#2f2358; --line:#45347c; --txt:#efe8ff; --dim:#b5a6e0; --faint:#a899d6; }
+:root[data-dark="tone"][data-theme="uzay"]      { --bg:#060b16; --panel:#0d1626; --panel2:#12203a; --panel3:#1a2c4e; --line:#26406b; --txt:#e6f0ff; --dim:#9db4d8; --faint:#90a8cc; --scrim:rgba(2,5,12,.82); }
+:root[data-dark="tone"][data-theme="steampunk"] { --bg:#140d08; --panel:#20150d; --panel2:#2a1c11; --panel3:#3a281a; --line:#5a432b; --txt:#f2e6d4; --dim:#c4ad8c; --faint:#b6a082; --scrim:rgba(10,6,3,.82); }
+:root[data-dark="tone"][data-theme="noir"]      { --bg:#09090a; --panel:#131314; --panel2:#1a1a1c; --panel3:#262629; --line:#38383d; --txt:#e8e6e0; --dim:#a9a69e; --faint:#9a978f; --scrim:rgba(0,0,0,.84); }
+:root[data-dark="tone"][data-theme="samuray"]   { --bg:#140a0c; --panel:#201015; --panel2:#2a161c; --panel3:#3a1f28; --line:#573240; --txt:#f6e8e8; --dim:#c9a4ac; --faint:#bb979f; --scrim:rgba(10,3,5,.82); }
+:root[data-dark="tone"][data-theme="siginak"]   { --bg:#0a0d08; --panel:#12170d; --panel2:#181f12; --panel3:#222c19; --line:#36452b; --txt:#d8e8c0; --dim:#a3b682; --faint:#96a977; --scrim:rgba(3,5,2,.84); }
+:root[data-dark="tone"][data-theme="western"]   { --bg:#150e09; --panel:#21160e; --panel2:#2b1d12; --panel3:#3b281a; --line:#5a422b; --txt:#f4e8d6; --dim:#c9b08e; --faint:#bba384; --scrim:rgba(10,6,3,.82); }
+:root[data-accent="red"]    { --accent:#d23a3a; --accent-bright:#ff6b5e; --accent-ink:#ffffff; --accent-soft:rgba(255,107,94,.16); --hover:#ff6b5e; }
+:root[data-accent="copper"] { --accent:#c0702c; --accent-bright:#ffa65c; --accent-ink:#1d0e02; --accent-soft:rgba(255,166,92,.16); --hover:#ffa65c; }
+:root[data-accent="cyan"]    { --accent:#1fb4c6; --accent-bright:#3df2ff; --accent-ink:#04141a; --accent-soft:rgba(61,242,255,.16); --hover:#3df2ff; }
+:root[data-accent="pink"]    { --accent:#c928b4; --accent-bright:#ff5cf0; --accent-ink:#ffffff; --accent-soft:rgba(255,61,240,.16); --hover:#ff5cf0; }
+:root[data-accent="emerald"] { --accent:#22b878; --accent-bright:#46ffb0; --accent-ink:#031a10; --accent-soft:rgba(70,255,176,.15); --hover:#46ffb0; }
+:root[data-accent="amber"]   { --accent:#e39a1e; --accent-bright:#ffc44d; --accent-ink:#1d1100; --accent-soft:rgba(255,196,77,.16); --hover:#ffc44d; }

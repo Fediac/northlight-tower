@@ -1,0 +1,80 @@
+/* NorthLight Tower — Claude's questions (owner questions.js): the question card at the bottom right and the "Question" button in the header.
+   Colors only from theme.css variables; class prefix ask-. The card is not modal: the stage and panels remain usable. */
+
+/* header button: visible only while a question is pending (.hbtn display:inline-flex should not override [hidden]) */
+#askBtn[hidden] { display:none; }
+#askBadge { font-style:normal; font-size:10.5px; font-weight:700; line-height:16px; min-width:16px; height:16px; padding:0 5px; text-align:center; border-radius:999px; background:var(--warn); color:var(--ink); }
+#askBadge[hidden] { display:none; }
+#askBtn.ask-has { color:var(--txt); border-color:color-mix(in srgb, var(--warn) 60%, var(--line)); }
+#askBtn.ask-has:not(.on) #askBadge { animation:ask-badge 2.4s ease-in-out infinite; }
+@keyframes ask-badge { 0%, 100% { box-shadow:0 0 0 0 transparent; } 50% { box-shadow:0 0 0 4px color-mix(in srgb, var(--warn) 30%, transparent); } }
+
+/* container: bottom right corner; on top even when chat / gallery / settings are open (the reader and the image window are higher) */
+.ask-dock { position:fixed; right:14px; bottom:14px; z-index:45; width:min(440px, calc(100vw - 28px)); max-height:calc(100vh - var(--hdr-h, 88px) - 28px); display:flex; flex-direction:column; }
+.ask-dock[hidden], .ask-dock.min { display:none; }
+/* inside the conversation in the Messages window (slot: .chat-askslot): not fixed to the corner, in the flow */
+.ask-dock.inline { position:static; z-index:auto; width:auto; max-height:none; }
+/* screen reader announcement (aria-live): invisible but read */
+.ask-sr { position:absolute; width:1px; height:1px; margin:-1px; padding:0; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
+
+.ask-card { display:flex; flex-direction:column; min-height:0; max-height:100%; background:var(--panel); color:var(--txt); border:1px solid var(--line); border-top:3px solid var(--warn); border-radius:var(--radius-lg); box-shadow:var(--shadow), 0 0 0 1px color-mix(in srgb, var(--warn) 18%, transparent); font-size:var(--fs); animation:ask-in .2s ease-out; }
+.ask-card[hidden] { display:none; }
+@keyframes ask-in { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:none; } }
+
+.ask-hd { flex:0 0 auto; display:flex; align-items:center; gap:11px; padding:11px 10px 9px 13px; border-bottom:1px solid var(--line); }
+.ask-hd .av { flex:0 0 auto; }
+.ask-ht { flex:1 1 auto; min-width:0; }
+.ask-kick { display:flex; align-items:center; flex-wrap:wrap; gap:6px; color:var(--warn); font-size:10.5px; font-weight:700; letter-spacing:.6px; }
+.ask-pip { width:7px; height:7px; border-radius:50%; background:var(--warn); box-shadow:0 0 8px var(--warn); animation:ask-pip 1.6s ease-in-out infinite; }
+@keyframes ask-pip { 50% { opacity:.35; } }
+.ask-tag { padding:1px 6px; border-radius:999px; background:var(--hair); color:var(--dim); font-size:10px; letter-spacing:.3px; }
+.ask-tag[hidden] { display:none; }
+.ask-title { margin:2px 0 0; font-size:var(--fs-l); font-weight:600; line-height:1.3; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.ask-min { flex:0 0 auto; align-self:flex-start; width:28px; height:28px; padding:0; border:1px solid transparent; border-radius:var(--radius); background:transparent; color:var(--dim); font:inherit; font-size:18px; line-height:1; cursor:pointer; }
+.ask-min:hover { background:var(--btn); color:var(--txt); }
+
+.ask-body { flex:1 1 auto; min-height:0; overflow:auto; padding:4px 13px 12px; }
+.ask-q { margin:10px 0 0; padding:0; border:0; min-width:0; }
+.ask-q + .ask-q { margin-top:16px; padding-top:12px; border-top:1px dashed var(--line); }
+.ask-lg { display:flex; align-items:baseline; flex-wrap:wrap; gap:7px; padding:0; margin-bottom:7px; font-weight:600; line-height:1.4; }
+.ask-chip { flex:0 0 auto; padding:1px 8px; border-radius:999px; background:var(--accent-soft); color:var(--accent-bright); border:1px solid color-mix(in srgb, var(--accent-bright) 35%, transparent); font-size:10.5px; font-weight:700; letter-spacing:.3px; }
+.ask-qt { min-width:0; overflow-wrap:anywhere; white-space:pre-wrap; }
+.ask-qd, .ask-hint { margin:-3px 0 7px; color:var(--dim); font-size:var(--fs-s); line-height:1.45; white-space:pre-wrap; overflow-wrap:anywhere; }
+.ask-hint { color:var(--faint); }
+
+.ask-opts { display:flex; flex-direction:column; gap:5px; }
+.ask-opt { display:flex; align-items:flex-start; gap:9px; padding:7px 10px; border:1px solid var(--line); border-radius:var(--radius); background:var(--panel2); cursor:pointer; }
+.ask-opt:hover { border-color:color-mix(in srgb, var(--accent-bright) 55%, var(--line)); }
+.ask-opt:has(input:checked) { border-color:var(--accent-bright); background:color-mix(in srgb, var(--accent-soft) 70%, var(--panel2)); }
+.ask-opt:has(input:focus-visible) { outline:2px solid var(--accent-bright); outline-offset:1px; }
+.ask-opt input[type="radio"], .ask-opt input[type="checkbox"] { flex:0 0 auto; margin:2px 0 0; accent-color:var(--accent-bright); width:15px; height:15px; }
+.ask-ot { flex:1 1 auto; min-width:0; display:flex; flex-direction:column; gap:2px; line-height:1.4; }
+.ask-ot b { font-weight:600; overflow-wrap:anywhere; }
+.ask-ot small { color:var(--dim); font-size:var(--fs-s); overflow-wrap:anywhere; }
+.ask-otext, .ask-text, .ask-num input[type="number"] { box-sizing:border-box; width:100%; margin-top:5px; padding:6px 9px; border:1px solid var(--line); border-radius:var(--radius); background:var(--bg); color:var(--txt); font:inherit; }
+.ask-text { margin-top:0; resize:vertical; min-height:62px; line-height:1.45; }
+.ask-otext:focus, .ask-text:focus, .ask-num input:focus { outline:2px solid var(--accent-bright); outline-offset:0; border-color:transparent; }
+.ask-prev { margin:7px 0 0; max-height:180px; overflow:auto; padding:8px 10px; border:1px solid var(--line); border-radius:var(--radius); background:var(--bg); color:var(--code); font:12px/1.45 ui-monospace, Consolas, monospace; white-space:pre-wrap; overflow-wrap:anywhere; }
+.ask-prev[hidden] { display:none; }
+
+.ask-num { display:flex; align-items:center; flex-wrap:wrap; gap:9px; }
+.ask-num input[type="range"] { flex:1 1 160px; accent-color:var(--accent-bright); }
+.ask-num input[type="number"] { flex:0 0 92px; width:92px; margin-top:0; }
+.ask-unit { color:var(--dim); }
+.ask-range { flex:1 0 100%; color:var(--faint); font-size:10.5px; }
+
+.ask-err { min-height:0; margin-top:10px; color:var(--bad-text); font-size:var(--fs-s); }
+.ask-err:empty { display:none; }
+.ask-btns { display:flex; justify-content:flex-end; flex-wrap:wrap; gap:8px; margin-top:12px; }
+.ask-btn { height:32px; padding:0 14px; border:1px solid var(--line); border-radius:var(--radius); background:var(--btn); color:var(--txt); font:inherit; font-weight:600; cursor:pointer; }
+.ask-btn:hover:not(:disabled) { background:var(--btn-hover); }
+.ask-btn.pri { background:var(--accent); border-color:var(--accent); color:var(--accent-ink); min-width:92px; }
+.ask-btn.pri:hover:not(:disabled) { background:var(--accent-bright); }
+.ask-btn:disabled { opacity:.6; cursor:default; }
+.ask-btn:focus-visible, .ask-min:focus-visible { outline:2px solid var(--accent-bright); outline-offset:2px; }
+.ask-note { display:block; margin-top:9px; color:var(--faint); font-size:10.5px; line-height:1.4; text-align:right; }
+
+@media (max-width: 560px) {
+  .ask-dock { right:8px; left:8px; bottom:8px; width:auto; }
+}
+@media (prefers-reduced-motion: reduce) { .ask-card, .ask-pip, #askBtn.ask-has:not(.on) #askBadge { animation:none; } }

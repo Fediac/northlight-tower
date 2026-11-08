@@ -1,0 +1,228 @@
+{
+ "id": "buyucu",
+ "name": "Wizard tower",
+ "files": [
+  "bg/floor_galeri.png",
+  "bg/floor_galeri_glass.png",
+  "bg/floor_kod.png",
+  "bg/floor_kod_glass.png",
+  "bg/floor_lobi.png",
+  "bg/floor_lobi_glass.png",
+  "bg/floor_mudur.png",
+  "bg/floor_mudur_glass.png",
+  "bg/floor_tasarim.png",
+  "bg/floor_tasarim_glass.png",
+  "bg/skyline_far.png",
+  "bg/skyline_near_keyed.png",
+  "f/arcade.png",
+  "f/armchair.png",
+  "f/balcony_railing.png",
+  "f/bench.png",
+  "f/boxes.png",
+  "f/chair_small.png",
+  "f/coffee_machine.png",
+  "f/coffee_table.png",
+  "f/desk_b.png",
+  "f/easel.png",
+  "f/exec_chair.png",
+  "f/exec_desk_clean.png",
+  "f/exec_device.png",
+  "f/floor_lamp.png",
+  "f/monitor.png",
+  "f/plant_tall.png",
+  "f/poster_robot.png",
+  "f/poster_synth.png",
+  "f/printer.png",
+  "f/prop_cactus.png",
+  "f/prop_headphones.png",
+  "f/prop_mug.png",
+  "f/prop_ramen.png",
+  "f/reception_desk.png",
+  "f/server_rack.png",
+  "f/shelf_unit.png",
+  "f/sofa_a.png",
+  "f/trophy_case.png",
+  "f/vape_stand.png",
+  "f/vending.png",
+  "f/water_cooler.png",
+  "f/whiteboard.png",
+  "atlas/atlas.json",
+  "atlas/bilim.png",
+  "atlas/bluehair.png",
+  "atlas/cyborg.png",
+  "atlas/gasmask.png",
+  "atlas/gozluk.png",
+  "atlas/hacker.png",
+  "atlas/kedi.png",
+  "atlas/knight.png",
+  "atlas/mavi.png",
+  "atlas/mudire.png",
+  "atlas/mudur.png",
+  "atlas/pilot.png",
+  "atlas/punk.png",
+  "atlas/robot.png",
+  "atlas/samuray.png",
+  "atlas/sanatci.png",
+  "faces/hacker.png",
+  "faces/punk.png",
+  "faces/bluehair.png",
+  "faces/cyborg.png",
+  "faces/knight.png",
+  "faces/gasmask.png",
+  "faces/mavi.png",
+  "faces/gozluk.png",
+  "faces/kedi.png",
+  "faces/robot.png",
+  "faces/bilim.png",
+  "faces/sanatci.png",
+  "faces/pilot.png",
+  "faces/samuray.png",
+  "faces/mudur.png",
+  "faces/mudire.png"
+ ],
+ "floorNames": {
+  "mudur": "Archmage Council",
+  "kod": "Alchemy & Spellcraft",
+  "tasarim": "Divination Gallery",
+  "galeri": "Crystal Gallery",
+  "lobi": "Inn & Tavern"
+ },
+ "floorShort": {
+  "mudur": "Council",
+  "kod": "Alchemy",
+  "tasarim": "Divination",
+  "galeri": "Crystal",
+  "lobi": "Inn"
+ },
+ "acc": {
+  "mudur": [
+   255,
+   214,
+   102
+  ],
+  "kod": [
+   118,
+   240,
+   190
+  ],
+  "tasarim": [
+   196,
+   150,
+   255
+  ],
+  "galeri": [
+   112,
+   204,
+   255
+  ],
+  "lobi": [
+   255,
+   168,
+   88
+  ]
+ },
+ "backdrop": {
+  "top": "#07041a",
+  "bottom": "#1c1448",
+  "star": "#e8dcff"
+ },
+ "roof": {
+  "top": "#07041a",
+  "bottom": "#3a2470",
+  "star": "#f0e6ff",
+  "mast": "#2a2244",
+  "blink": "#a9e8ff",
+  "blinkGlow": "#76d8ff",
+  "signBg": "#120d2a",
+  "signEdge": "#c9a64a",
+  "signHi": "rgba(201,166,74,.35)",
+  "signGlow": "#a9d8ff",
+  "t0": "#a9e8ff",
+  "t1": "#fff2c8",
+  "t2": "#a99be0"
+ },
+ "base": {
+  "fill": "#0a0716",
+  "line": "#c9a64a",
+  "dash": "#1e1838"
+ },
+ "sky": {
+  "fill": "#0c0a22",
+  "tint": "rgba(30,14,70,.22)",
+  "particle": {
+   "kind": "rise",
+   "color": "rgba(255,236,160,.85)",
+   "size": 1
+  },
+  "vehicles": {
+   "colors": [
+    "#a8ffd8",
+    "#ffd0a0"
+   ],
+   "w": 3,
+   "h": 1
+  }
+ },
+ "fx": {
+  "beam": "#c8f0ff",
+  "beamGlow": "#8ad0ff",
+  "vapor": "#d0b8ff",
+  "vaporMask": "#b8f0d8",
+  "steam": "#e8e0ff"
+ },
+ "glow": {
+  "lamp": "#a9e8ff",
+  "sofa": "#ffa858",
+  "vape": "#c496ff",
+  "arcade": "#76f0be",
+  "door": "#a9e8ff",
+  "desk": "#8a70e0",
+  "rack": "#76f0be",
+  "rackLed": "#16122a"
+ },
+ "gallery": {
+  "badge": "#c9a64a",
+  "hover": "#e6c668",
+  "glow": "#c496ff",
+  "holo": [
+   150,
+   220,
+   255
+  ],
+  "holoLine": [
+   170,
+   230,
+   255
+  ],
+  "bg": "#0d0a1e",
+  "holoBg": "#08101c"
+ },
+ "board": {
+  "bg": "#0e0a1e",
+  "title": "#e6c668",
+  "ticker": "#76f0be",
+  "tickerBg": "#16122a",
+  "line": "#4a4272"
+ },
+ "elev": {
+  "leaf": "#3a3250",
+  "line": "#251f3a",
+  "edge": "#5d5282",
+  "inner": [
+   "#e8f4ff",
+   "#a9c8ee",
+   "#5a7fb0"
+  ],
+  "glow": "#a9d8ff"
+ },
+ "mon": {
+  "off": "#1a1530",
+  "bezel": true
+ },
+ "lid": {
+  "outline": "#08061a",
+  "body": "#3a3258",
+  "hi": "#6a5ea0",
+  "base": "#1c1634"
+ }
+}

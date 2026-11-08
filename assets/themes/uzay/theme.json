@@ -1,0 +1,228 @@
+{
+ "id": "uzay",
+ "name": "Retro space station",
+ "files": [
+  "bg/floor_galeri.png",
+  "bg/floor_galeri_glass.png",
+  "bg/floor_kod.png",
+  "bg/floor_kod_glass.png",
+  "bg/floor_lobi.png",
+  "bg/floor_lobi_glass.png",
+  "bg/floor_mudur.png",
+  "bg/floor_mudur_glass.png",
+  "bg/floor_tasarim.png",
+  "bg/floor_tasarim_glass.png",
+  "bg/skyline_far.png",
+  "bg/skyline_near_keyed.png",
+  "f/arcade.png",
+  "f/armchair.png",
+  "f/balcony_railing.png",
+  "f/bench.png",
+  "f/boxes.png",
+  "f/chair_small.png",
+  "f/coffee_machine.png",
+  "f/coffee_table.png",
+  "f/desk_b.png",
+  "f/easel.png",
+  "f/exec_chair.png",
+  "f/exec_desk_clean.png",
+  "f/exec_device.png",
+  "f/floor_lamp.png",
+  "f/monitor.png",
+  "f/plant_tall.png",
+  "f/poster_robot.png",
+  "f/poster_synth.png",
+  "f/printer.png",
+  "f/prop_cactus.png",
+  "f/prop_headphones.png",
+  "f/prop_mug.png",
+  "f/prop_ramen.png",
+  "f/reception_desk.png",
+  "f/server_rack.png",
+  "f/shelf_unit.png",
+  "f/sofa_a.png",
+  "f/trophy_case.png",
+  "f/vape_stand.png",
+  "f/vending.png",
+  "f/water_cooler.png",
+  "f/whiteboard.png",
+  "atlas/atlas.json",
+  "atlas/bilim.png",
+  "atlas/bluehair.png",
+  "atlas/cyborg.png",
+  "atlas/gasmask.png",
+  "atlas/gozluk.png",
+  "atlas/hacker.png",
+  "atlas/kedi.png",
+  "atlas/knight.png",
+  "atlas/mavi.png",
+  "atlas/mudire.png",
+  "atlas/mudur.png",
+  "atlas/pilot.png",
+  "atlas/punk.png",
+  "atlas/robot.png",
+  "atlas/samuray.png",
+  "atlas/sanatci.png",
+  "faces/hacker.png",
+  "faces/punk.png",
+  "faces/bluehair.png",
+  "faces/cyborg.png",
+  "faces/knight.png",
+  "faces/gasmask.png",
+  "faces/mavi.png",
+  "faces/gozluk.png",
+  "faces/kedi.png",
+  "faces/robot.png",
+  "faces/bilim.png",
+  "faces/sanatci.png",
+  "faces/pilot.png",
+  "faces/samuray.png",
+  "faces/mudur.png",
+  "faces/mudire.png"
+ ],
+ "floorNames": {
+  "mudur": "Captain's Bridge",
+  "kod": "Engineering & Reactor Deck",
+  "tasarim": "Bio-Lab & Holodeck",
+  "galeri": "Holo Gallery",
+  "lobi": "Observation Deck"
+ },
+ "floorShort": {
+  "mudur": "Bridge",
+  "kod": "Reactor",
+  "tasarim": "Bio-Lab",
+  "galeri": "Holo",
+  "lobi": "Observation"
+ },
+ "acc": {
+  "mudur": [
+   255,
+   170,
+   60
+  ],
+  "kod": [
+   90,
+   210,
+   255
+  ],
+  "tasarim": [
+   190,
+   130,
+   255
+  ],
+  "galeri": [
+   90,
+   240,
+   200
+  ],
+  "lobi": [
+   255,
+   110,
+   100
+  ]
+ },
+ "backdrop": {
+  "top": "#02030a",
+  "bottom": "#0c1430",
+  "star": "#ffffff"
+ },
+ "roof": {
+  "top": "#02030a",
+  "bottom": "#14224a",
+  "star": "#ffffff",
+  "mast": "#2a3550",
+  "blink": "#ff5a4d",
+  "blinkGlow": "#ff3a30",
+  "signBg": "#0a1020",
+  "signEdge": "#5ad2ff",
+  "signHi": "rgba(90,210,255,.35)",
+  "signGlow": "#5ad2ff",
+  "t0": "#ffaa3c",
+  "t1": "#e6f6ff",
+  "t2": "#8aa0d0"
+ },
+ "base": {
+  "fill": "#04060e",
+  "line": "#5ad2ff",
+  "dash": "#1c2536"
+ },
+ "sky": {
+  "fill": "#02030a",
+  "tint": "rgba(6,10,40,.10)",
+  "particle": {
+   "kind": "dust",
+   "color": "rgba(255,255,255,.75)",
+   "size": 1
+  },
+  "vehicles": {
+   "colors": [
+    "#ff6a4d",
+    "#7aeaff"
+   ],
+   "w": 4,
+   "h": 1
+  }
+ },
+ "fx": {
+  "beam": "#9ae8ff",
+  "beamGlow": "#5ad2ff",
+  "vapor": "#c8f0ff",
+  "vaporMask": "#ffd0c0",
+  "steam": "#e8f6ff"
+ },
+ "glow": {
+  "lamp": "#ffaa3c",
+  "sofa": "#ff6e64",
+  "vape": "#5ad2ff",
+  "arcade": "#5ad2ff",
+  "door": "#5ad2ff",
+  "desk": "#5a8aff",
+  "rack": "#5af0c8",
+  "rackLed": "#10161f"
+ },
+ "gallery": {
+  "badge": "#5ad2ff",
+  "hover": "#5ad2ff",
+  "glow": "#5ad2ff",
+  "holo": [
+   90,
+   220,
+   255
+  ],
+  "holoLine": [
+   130,
+   235,
+   255
+  ],
+  "bg": "#060a14",
+  "holoBg": "#030a12"
+ },
+ "board": {
+  "bg": "#060a14",
+  "title": "#ffaa3c",
+  "ticker": "#5af0c8",
+  "tickerBg": "#0c1424",
+  "line": "#34425c"
+ },
+ "elev": {
+  "leaf": "#44526c",
+  "line": "#2a3448",
+  "edge": "#8a9ab8",
+  "inner": [
+   "#f0fbff",
+   "#b4d8ee",
+   "#6a90b0"
+  ],
+  "glow": "#bfeaff"
+ },
+ "mon": {
+  "off": "#1c2436",
+  "bezel": true
+ },
+ "lid": {
+  "outline": "#060a12",
+  "body": "#5a6682",
+  "hi": "#8a96b0",
+  "base": "#2a3248"
+ }
+}
